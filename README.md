@@ -22,7 +22,7 @@ Dealing with different metadata standards across geospatial projects can be cumb
 The package is currently under development to support the following geospatial metadata
 
 * XML schema: ISO 19115-3/19110, QGIS metadata
-* JSON schema: NADA geospatial, DDH
+* JSON schema: NADA geospatial, World Bank DDH (Development Data Hub)
 
 ```sh
 import geometatool
