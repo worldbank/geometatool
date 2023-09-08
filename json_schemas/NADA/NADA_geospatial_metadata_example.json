@@ -1,0 +1,1090 @@
+{
+    "repositoryid": "string",
+    "published": 0,
+    "overwrite": "no",
+    "metadata_information": {
+      "title": "string",
+      "idno": "string",
+      "producers": [
+        {
+          "name": "string",
+          "abbr": "string",
+          "affiliation": "string",
+          "role": "string"
+        }
+      ],
+      "production_date": "string",
+      "version": "string"
+    },
+    "description": {
+      "idno": "string",
+      "language": "string",
+      "characterSet": {
+        "codeListValue": "string",
+        "codeList": "string"
+      },
+      "parentIdentifier": "string",
+      "hierarchyLevel": [
+        "string"
+      ],
+      "hierarchyLevelName": [
+        "string"
+      ],
+      "contact": [
+        {
+          "individualName": "string",
+          "organisationName": "string",
+          "positionName": "string",
+          "contactInfo": {
+            "phone": {
+              "voice": "string",
+              "facsimile": "string"
+            },
+            "address": {
+              "deliveryPoint": "string",
+              "city": "string",
+              "postalCode": "string",
+              "country": "string",
+              "elctronicMailAddress": "string"
+            },
+            "onlineResource": {
+              "linkage": "string",
+              "name": "string",
+              "description": "string",
+              "protocol": "string",
+              "function": "string"
+            }
+          },
+          "role": "string"
+        }
+      ],
+      "dateStamp": "string",
+      "metadataStandardName": "string",
+      "metadataStandardVersion": "string",
+      "dataSetURI": "string",
+      "spatialRepresentationInfo": [
+        {
+          "vectorSpatialRepresentation": {
+            "topologyLevel": "string",
+            "geometricObjects": [
+              {
+                "geometricObjectType": "string",
+                "geometricObjectCount": 0
+              }
+            ]
+          },
+          "gridSpatialRepresentation": {
+            "numberOfDimensions": 0,
+            "axisDimensionProperties": [
+              {
+                "dimensionName": "string",
+                "dimensionSize": 0,
+                "resolution": 0
+              }
+            ],
+            "cellGeometry": "string",
+            "transformationParameterAvailability": true
+          }
+        }
+      ],
+      "referenceSystemInfo": [
+        {
+          "code": "string",
+          "codeSpace": "string"
+        }
+      ],
+      "identificationInfo": [
+        {
+          "citation": {
+            "title": "string",
+            "alternateTitle": "string",
+            "date": [
+              {
+                "date": "string",
+                "type": "string"
+              }
+            ],
+            "edition": "string",
+            "editionDate": "string",
+            "identifier": {
+              "authority": "string",
+              "code": null
+            },
+            "citedResponsibleParty": [
+              {
+                "individualName": "string",
+                "organisationName": "string",
+                "positionName": "string",
+                "contactInfo": {
+                  "phone": {
+                    "voice": "string",
+                    "facsimile": "string"
+                  },
+                  "address": {
+                    "deliveryPoint": "string",
+                    "city": "string",
+                    "postalCode": "string",
+                    "country": "string",
+                    "elctronicMailAddress": "string"
+                  },
+                  "onlineResource": {
+                    "linkage": "string",
+                    "name": "string",
+                    "description": "string",
+                    "protocol": "string",
+                    "function": "string"
+                  }
+                },
+                "role": "string"
+              }
+            ],
+            "presentationForm": [
+              "string"
+            ],
+            "series": {
+              "name": "string",
+              "issueIdentification": "string",
+              "page": "string"
+            },
+            "otherCitationDetails": "string",
+            "collectiveTitle": "string",
+            "ISBN": "string",
+            "ISSN": "string"
+          },
+          "abstract": "string",
+          "purpose": "string",
+          "credit": "string",
+          "status": "string",
+          "pointOfContact": [
+            {
+              "individualName": "string",
+              "organisationName": "string",
+              "positionName": "string",
+              "contactInfo": {
+                "phone": {
+                  "voice": "string",
+                  "facsimile": "string"
+                },
+                "address": {
+                  "deliveryPoint": "string",
+                  "city": "string",
+                  "postalCode": "string",
+                  "country": "string",
+                  "elctronicMailAddress": "string"
+                },
+                "onlineResource": {
+                  "linkage": "string",
+                  "name": "string",
+                  "description": "string",
+                  "protocol": "string",
+                  "function": "string"
+                }
+              },
+              "role": "string"
+            }
+          ],
+          "resourceMaintenance": [
+            {
+              "maintenanceAndUpdateFrequency": "string"
+            }
+          ],
+          "graphicOverview": [
+            {
+              "fileName": "string",
+              "fileDescription": "string",
+              "fileType": "string"
+            }
+          ],
+          "resourceFormat": [
+            {
+              "name": "string",
+              "version": "string",
+              "amendmentNumber": "string",
+              "specification": "string",
+              "fileDecompressionTechnique": "string",
+              "FormatDistributor": {
+                "individualName": "string",
+                "organisationName": "string",
+                "positionName": "string",
+                "contactInfo": {
+                  "phone": {
+                    "voice": "string",
+                    "facsimile": "string"
+                  },
+                  "address": {
+                    "deliveryPoint": "string",
+                    "city": "string",
+                    "postalCode": "string",
+                    "country": "string",
+                    "elctronicMailAddress": "string"
+                  },
+                  "onlineResource": {
+                    "linkage": "string",
+                    "name": "string",
+                    "description": "string",
+                    "protocol": "string",
+                    "function": "string"
+                  }
+                },
+                "role": "string"
+              }
+            }
+          ],
+          "descriptiveKeywords": [
+            {
+              "type": "string",
+              "keyword": "string",
+              "thesaurusName": "string"
+            }
+          ],
+          "resourceConstraints": [
+            {
+              "legalConstraints": {
+                "useLimitation": [
+                  "string"
+                ],
+                "accessConstraints": [
+                  "string"
+                ],
+                "useConstraints": [
+                  "string"
+                ],
+                "otherConstraints": [
+                  "string"
+                ]
+              },
+              "securityConstraints": {
+                "useLimitation": [
+                  "string"
+                ],
+                "classification": "string",
+                "userNote": "string",
+                "classificationSystem": "string",
+                "handlingDescription": "string"
+              }
+            }
+          ],
+          "resourceSpecificUsage": [
+            {
+              "specificUsage": "string",
+              "usageDateTime": "string",
+              "userDeterminedLimitations": "string",
+              "userContactInfo": [
+                {
+                  "individualName": "string",
+                  "organisationName": "string",
+                  "positionName": "string",
+                  "contactInfo": {
+                    "phone": {
+                      "voice": "string",
+                      "facsimile": "string"
+                    },
+                    "address": {
+                      "deliveryPoint": "string",
+                      "city": "string",
+                      "postalCode": "string",
+                      "country": "string",
+                      "elctronicMailAddress": "string"
+                    },
+                    "onlineResource": {
+                      "linkage": "string",
+                      "name": "string",
+                      "description": "string",
+                      "protocol": "string",
+                      "function": "string"
+                    }
+                  },
+                  "role": "string"
+                }
+              ]
+            }
+          ],
+          "aggregationInfo": {
+            "aggregateDataSetName": "string",
+            "aggregateDataSetIdentifier": "string",
+            "associationType": "string",
+            "initiativeType": "string"
+          },
+          "extent": {
+            "geographicElement": [
+              {
+                "geographicBoundingBox": {
+                  "westBoundLongitude": -180,
+                  "eastBoundLongitude": -180,
+                  "southBoundLatitude": -180,
+                  "northBoundLatitude": -180
+                },
+                "geographicDescription": "string"
+              }
+            ],
+            "temporalElement": [
+              {
+                "extent": null
+              }
+            ],
+            "verticalElement": [
+              {
+                "minimumValue": 0,
+                "maximumValue": 0,
+                "verticalCRS": null
+              }
+            ]
+          },
+          "spatialRepresentationType": "string",
+          "spatialResolution": {
+            "uom": "string",
+            "value": 0
+          },
+          "language": [
+            "string"
+          ],
+          "characterSet": [
+            {
+              "codeListValue": "string",
+              "codeList": "string"
+            }
+          ],
+          "topicCategory": [
+            "string"
+          ],
+          "supplementalInformation": "string",
+          "serviceIdentification": {
+            "serviceType": "string",
+            "serviceTypeVersion": "string",
+            "accessProperties": {
+              "fees": "string",
+              "plannedAvailableDateTime": "string",
+              "orderingInstructions": "string",
+              "turnaround": "string"
+            },
+            "restrictions": [
+              {
+                "legalConstraints": {
+                  "useLimitation": [
+                    "string"
+                  ],
+                  "accessConstraints": [
+                    "string"
+                  ],
+                  "useConstraints": [
+                    "string"
+                  ],
+                  "otherConstraints": [
+                    "string"
+                  ]
+                },
+                "securityConstraints": {
+                  "useLimitation": [
+                    "string"
+                  ],
+                  "classification": "string",
+                  "userNote": "string",
+                  "classificationSystem": "string",
+                  "handlingDescription": "string"
+                }
+              }
+            ],
+            "keywords": [
+              {
+                "type": "string",
+                "keyword": "string",
+                "thesaurusName": "string"
+              }
+            ],
+            "coupledResource": [
+              {
+                "operationName": "string",
+                "identifier": "string"
+              }
+            ],
+            "couplingType": "string",
+            "containsOperations": [
+              {
+                "operationName": "string",
+                "DCP": [
+                  "string"
+                ],
+                "operationDescription": "string",
+                "invocationName": "string",
+                "parameters": [
+                  {
+                    "name": "string",
+                    "direction": "string",
+                    "description": "string",
+                    "optionality": "string",
+                    "repeatability": true,
+                    "valueType": "string"
+                  }
+                ],
+                "connectPoint": {
+                  "linkage": "string",
+                  "name": "string",
+                  "description": "string",
+                  "protocol": "string",
+                  "function": "string"
+                },
+                "dependsOn": [
+                  {}
+                ]
+              }
+            ],
+            "operatesOn": [
+              {
+                "uuidref": "string"
+              }
+            ]
+          }
+        }
+      ],
+      "contentInfo": [
+        {
+          "featureCatalogueDescription": {
+            "complianceCode": true,
+            "language": "string",
+            "includedWithDataset": true,
+            "featureCatalogueCitation": {
+              "title": "string",
+              "alternateTitle": "string",
+              "date": [
+                {
+                  "date": "string",
+                  "type": "string"
+                }
+              ],
+              "edition": "string",
+              "editionDate": "string",
+              "identifier": {
+                "authority": "string",
+                "code": null
+              },
+              "citedResponsibleParty": [
+                {
+                  "individualName": "string",
+                  "organisationName": "string",
+                  "positionName": "string",
+                  "contactInfo": {
+                    "phone": {
+                      "voice": "string",
+                      "facsimile": "string"
+                    },
+                    "address": {
+                      "deliveryPoint": "string",
+                      "city": "string",
+                      "postalCode": "string",
+                      "country": "string",
+                      "elctronicMailAddress": "string"
+                    },
+                    "onlineResource": {
+                      "linkage": "string",
+                      "name": "string",
+                      "description": "string",
+                      "protocol": "string",
+                      "function": "string"
+                    }
+                  },
+                  "role": "string"
+                }
+              ],
+              "presentationForm": [
+                "string"
+              ],
+              "series": {
+                "name": "string",
+                "issueIdentification": "string",
+                "page": "string"
+              },
+              "otherCitationDetails": "string",
+              "collectiveTitle": "string",
+              "ISBN": "string",
+              "ISSN": "string"
+            }
+          },
+          "coverageDescription": {
+            "contentType": "string",
+            "dimension": [
+              {
+                "name": "string",
+                "type": "string"
+              }
+            ]
+          }
+        }
+      ],
+      "distributionInfo": {
+        "distributionFormat": [
+          {
+            "name": "string",
+            "version": "string",
+            "amendmentNumber": "string",
+            "specification": "string",
+            "fileDecompressionTechnique": "string",
+            "FormatDistributor": {
+              "individualName": "string",
+              "organisationName": "string",
+              "positionName": "string",
+              "contactInfo": {
+                "phone": {
+                  "voice": "string",
+                  "facsimile": "string"
+                },
+                "address": {
+                  "deliveryPoint": "string",
+                  "city": "string",
+                  "postalCode": "string",
+                  "country": "string",
+                  "elctronicMailAddress": "string"
+                },
+                "onlineResource": {
+                  "linkage": "string",
+                  "name": "string",
+                  "description": "string",
+                  "protocol": "string",
+                  "function": "string"
+                }
+              },
+              "role": "string"
+            }
+          }
+        ],
+        "distributor": [
+          {
+            "individualName": "string",
+            "organisationName": "string",
+            "positionName": "string",
+            "contactInfo": {
+              "phone": {
+                "voice": "string",
+                "facsimile": "string"
+              },
+              "address": {
+                "deliveryPoint": "string",
+                "city": "string",
+                "postalCode": "string",
+                "country": "string",
+                "elctronicMailAddress": "string"
+              },
+              "onlineResource": {
+                "linkage": "string",
+                "name": "string",
+                "description": "string",
+                "protocol": "string",
+                "function": "string"
+              }
+            },
+            "role": "string"
+          }
+        ],
+        "transferOptions": {
+          "onLine": [
+            {
+              "dctype": "doc/oth",
+              "dcformat": "string",
+              "title": "string",
+              "author": "string",
+              "dcdate": "string",
+              "country": "string",
+              "language": "string",
+              "contributor": "string",
+              "publisher": "string",
+              "rights": "string",
+              "description": "string",
+              "abstract": "string",
+              "toc": "string",
+              "filename": "string"
+            }
+          ]
+        }
+      },
+      "dataQualityInfo": [
+        {
+          "scope": "string",
+          "report": [
+            {
+              "DQ_DomainConsistency": {
+                "result": {
+                  "nameOfMeasure": [
+                    "string"
+                  ],
+                  "measureIdentification": "string",
+                  "measureDescription": "string",
+                  "evaluationMethodType": [
+                    "string"
+                  ],
+                  "evaluationMethodDescription": "string",
+                  "evaluationProcedure": {
+                    "title": "string",
+                    "alternateTitle": "string",
+                    "date": [
+                      {
+                        "date": "string",
+                        "type": "string"
+                      }
+                    ],
+                    "edition": "string",
+                    "editionDate": "string",
+                    "identifier": {
+                      "authority": "string",
+                      "code": null
+                    },
+                    "citedResponsibleParty": [
+                      {
+                        "individualName": "string",
+                        "organisationName": "string",
+                        "positionName": "string",
+                        "contactInfo": {
+                          "phone": {
+                            "voice": "string",
+                            "facsimile": "string"
+                          },
+                          "address": {
+                            "deliveryPoint": "string",
+                            "city": "string",
+                            "postalCode": "string",
+                            "country": "string",
+                            "elctronicMailAddress": "string"
+                          },
+                          "onlineResource": {
+                            "linkage": "string",
+                            "name": "string",
+                            "description": "string",
+                            "protocol": "string",
+                            "function": "string"
+                          }
+                        },
+                        "role": "string"
+                      }
+                    ],
+                    "presentationForm": [
+                      "string"
+                    ],
+                    "series": {
+                      "name": "string",
+                      "issueIdentification": "string",
+                      "page": "string"
+                    },
+                    "otherCitationDetails": "string",
+                    "collectiveTitle": "string",
+                    "ISBN": "string",
+                    "ISSN": "string"
+                  },
+                  "dateTime": "string",
+                  "result": [
+                    {
+                      "specification": {
+                        "title": "string",
+                        "alternateTitle": "string",
+                        "date": [
+                          {
+                            "date": "string",
+                            "type": "string"
+                          }
+                        ],
+                        "edition": "string",
+                        "editionDate": "string",
+                        "identifier": {
+                          "authority": "string",
+                          "code": null
+                        },
+                        "citedResponsibleParty": [
+                          {
+                            "individualName": "string",
+                            "organisationName": "string",
+                            "positionName": "string",
+                            "contactInfo": {
+                              "phone": {
+                                "voice": "string",
+                                "facsimile": "string"
+                              },
+                              "address": {
+                                "deliveryPoint": "string",
+                                "city": "string",
+                                "postalCode": "string",
+                                "country": "string",
+                                "elctronicMailAddress": "string"
+                              },
+                              "onlineResource": {
+                                "linkage": "string",
+                                "name": "string",
+                                "description": "string",
+                                "protocol": "string",
+                                "function": "string"
+                              }
+                            },
+                            "role": "string"
+                          }
+                        ],
+                        "presentationForm": [
+                          "string"
+                        ],
+                        "series": {
+                          "name": "string",
+                          "issueIdentification": "string",
+                          "page": "string"
+                        },
+                        "otherCitationDetails": "string",
+                        "collectiveTitle": "string",
+                        "ISBN": "string",
+                        "ISSN": "string"
+                      },
+                      "explanation": "string",
+                      "pass": true
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "lineage": {
+            "statement": "string",
+            "processStep": [
+              {
+                "description": "string",
+                "rationale": "string",
+                "dateTime": "string",
+                "processor": [
+                  {
+                    "individualName": "string",
+                    "organisationName": "string",
+                    "positionName": "string",
+                    "contactInfo": {
+                      "phone": {
+                        "voice": "string",
+                        "facsimile": "string"
+                      },
+                      "address": {
+                        "deliveryPoint": "string",
+                        "city": "string",
+                        "postalCode": "string",
+                        "country": "string",
+                        "elctronicMailAddress": "string"
+                      },
+                      "onlineResource": {
+                        "linkage": "string",
+                        "name": "string",
+                        "description": "string",
+                        "protocol": "string",
+                        "function": "string"
+                      }
+                    },
+                    "role": "string"
+                  }
+                ],
+                "source": [
+                  {
+                    "description": "string",
+                    "sourceCitation": {
+                      "title": "string",
+                      "alternateTitle": "string",
+                      "date": [
+                        {
+                          "date": "string",
+                          "type": "string"
+                        }
+                      ],
+                      "edition": "string",
+                      "editionDate": "string",
+                      "identifier": {
+                        "authority": "string",
+                        "code": null
+                      },
+                      "citedResponsibleParty": [
+                        {
+                          "individualName": "string",
+                          "organisationName": "string",
+                          "positionName": "string",
+                          "contactInfo": {
+                            "phone": {
+                              "voice": "string",
+                              "facsimile": "string"
+                            },
+                            "address": {
+                              "deliveryPoint": "string",
+                              "city": "string",
+                              "postalCode": "string",
+                              "country": "string",
+                              "elctronicMailAddress": "string"
+                            },
+                            "onlineResource": {
+                              "linkage": "string",
+                              "name": "string",
+                              "description": "string",
+                              "protocol": "string",
+                              "function": "string"
+                            }
+                          },
+                          "role": "string"
+                        }
+                      ],
+                      "presentationForm": [
+                        "string"
+                      ],
+                      "series": {
+                        "name": "string",
+                        "issueIdentification": "string",
+                        "page": "string"
+                      },
+                      "otherCitationDetails": "string",
+                      "collectiveTitle": "string",
+                      "ISBN": "string",
+                      "ISSN": "string"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "metadataMaintenance": {
+        "maintenanceAndUpdateFrequency": "string"
+      },
+      "portrayalCatalogueInfo": {
+        "portrayalCatalogueCitation": [
+          {
+            "title": "string",
+            "alternateTitle": "string",
+            "date": [
+              {
+                "date": "string",
+                "type": "string"
+              }
+            ],
+            "edition": "string",
+            "editionDate": "string",
+            "identifier": {
+              "authority": "string",
+              "code": null
+            },
+            "citedResponsibleParty": [
+              {
+                "individualName": "string",
+                "organisationName": "string",
+                "positionName": "string",
+                "contactInfo": {
+                  "phone": {
+                    "voice": "string",
+                    "facsimile": "string"
+                  },
+                  "address": {
+                    "deliveryPoint": "string",
+                    "city": "string",
+                    "postalCode": "string",
+                    "country": "string",
+                    "elctronicMailAddress": "string"
+                  },
+                  "onlineResource": {
+                    "linkage": "string",
+                    "name": "string",
+                    "description": "string",
+                    "protocol": "string",
+                    "function": "string"
+                  }
+                },
+                "role": "string"
+              }
+            ],
+            "presentationForm": [
+              "string"
+            ],
+            "series": {
+              "name": "string",
+              "issueIdentification": "string",
+              "page": "string"
+            },
+            "otherCitationDetails": "string",
+            "collectiveTitle": "string",
+            "ISBN": "string",
+            "ISSN": "string"
+          }
+        ]
+      },
+      "metadataExtensionInfo": null,
+      "applicationSchemaInformation": null,
+      "thesaurusInfo": [
+        {
+          "title": "string",
+          "alternateTitle": "string",
+          "date": [
+            {
+              "date": "string",
+              "type": "string"
+            }
+          ],
+          "edition": "string",
+          "editionDate": "string",
+          "identifier": {
+            "authority": "string",
+            "code": null
+          },
+          "citedResponsibleParty": [
+            {
+              "individualName": "string",
+              "organisationName": "string",
+              "positionName": "string",
+              "contactInfo": {
+                "phone": {
+                  "voice": "string",
+                  "facsimile": "string"
+                },
+                "address": {
+                  "deliveryPoint": "string",
+                  "city": "string",
+                  "postalCode": "string",
+                  "country": "string",
+                  "elctronicMailAddress": "string"
+                },
+                "onlineResource": {
+                  "linkage": "string",
+                  "name": "string",
+                  "description": "string",
+                  "protocol": "string",
+                  "function": "string"
+                }
+              },
+              "role": "string"
+            }
+          ],
+          "presentationForm": [
+            "string"
+          ],
+          "series": {
+            "name": "string",
+            "issueIdentification": "string",
+            "page": "string"
+          },
+          "otherCitationDetails": "string",
+          "collectiveTitle": "string",
+          "ISBN": "string",
+          "ISSN": "string"
+        }
+      ],
+      "feature_catalogue": {
+        "name": "string",
+        "scope": [
+          "string"
+        ],
+        "fieldOfApplication": [
+          "string"
+        ],
+        "versionNumber": "string",
+        "versionDate": {
+          "date": "string",
+          "type": "string"
+        },
+        "producer": {
+          "individualName": "string",
+          "organisationName": "string",
+          "positionName": "string",
+          "contactInfo": {
+            "phone": {
+              "voice": "string",
+              "facsimile": "string"
+            },
+            "address": {
+              "deliveryPoint": "string",
+              "city": "string",
+              "postalCode": "string",
+              "country": "string",
+              "elctronicMailAddress": "string"
+            },
+            "onlineResource": {
+              "linkage": "string",
+              "name": "string",
+              "description": "string",
+              "protocol": "string",
+              "function": "string"
+            }
+          },
+          "role": "string"
+        },
+        "functionalLanguage": "string",
+        "featureType": [
+          {
+            "typeName": "string",
+            "definition": "string",
+            "code": "string",
+            "isAbstract": true,
+            "aliases": [
+              "string"
+            ],
+            "carrierOfCharacteristics": [
+              {
+                "memberName": "string",
+                "definition": "string",
+                "cardinality": {
+                  "lower": 0,
+                  "upper": 0
+                },
+                "code": "string",
+                "valueMeasurementUnit": "string",
+                "valueType": "string",
+                "listedValue": [
+                  {
+                    "label": "string",
+                    "code": "string",
+                    "definition": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "provenance": [
+      {
+        "origin_description": {
+          "harvest_date": "string",
+          "altered": true,
+          "base_url": "string",
+          "identifier": "string",
+          "date_stamp": "string",
+          "metadata_namespace": "string"
+        }
+      }
+    ],
+    "tags": [
+      {
+        "tag": "string",
+        "tag_group": "string"
+      }
+    ],
+    "lda_topics": [
+      {
+        "model_info": [
+          {
+            "source": "string",
+            "author": "string",
+            "version": "string",
+            "model_id": "string",
+            "nb_topics": 0,
+            "description": "string",
+            "corpus": "string",
+            "uri": "string"
+          }
+        ],
+        "topic_description": [
+          {
+            "topic_id": null,
+            "topic_score": null,
+            "topic_label": "string",
+            "topic_words": [
+              {
+                "word": "string",
+                "word_weight": 0
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "embeddings": [
+      {
+        "id": "string",
+        "description": "string",
+        "date": "string",
+        "vector": {}
+      }
+    ],
+    "additional": {}
+  }

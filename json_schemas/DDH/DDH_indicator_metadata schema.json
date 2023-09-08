@@ -1,0 +1,118 @@
+{
+    "type": "object",
+    "properties": {
+        "Indicator": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "unique_id": {
+                    "type": "string"
+                },
+                "archive_nid": {
+                    "type": "string"
+                },
+                "dataset_id": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "unit": {
+                    "type": "string"
+                },
+                "fields": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "title": {
+                                "type": "string"
+                            },
+                            "type": {
+                                "type": "string"
+                            },
+                            "format": {
+                                "type": "string"
+                            },
+                            "rdfType": {
+                                "type": "string"
+                            },
+                            "description": {
+                                "type": "string"
+                            },
+                            "constraints": {
+                                "type": "string"
+                            },
+                            "unit": {
+                                "type": "string"
+                            },
+                            "unitSystem": {
+                                "type": "string"
+                            },
+                            "missingValues": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "primaryKey": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "foreignKeys": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "is_delete": {
+                                "type": "boolean"
+                            }
+                        }
+                    }
+                },
+                "dataset": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "lineage": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "harvest_system": {
+                            "type": "string"
+                        },
+                        "harvest_system_reference": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

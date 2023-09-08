@@ -1,0 +1,33 @@
+{
+    "Citation": {
+        "id": "string",
+        "unique_id": "string",
+        "dataset_id": "string",
+        "archive_nid": "string",
+        "identification": {
+            "id": "string",
+            "title": "string",
+            "description": "string",
+            "year": "string",
+            "url": "string",
+            "publisher": [
+                {
+                    "id": "string",
+                    "name": "string",
+                    "place": "string"
+                }
+            ]
+        },
+        "reference": [
+            {
+                "id": "string",
+                "annotation": "string",
+                "url": "string"
+            }
+        ],
+        "dataset": {
+            "id": "string",
+            "name": "string"
+        }
+    }
+}

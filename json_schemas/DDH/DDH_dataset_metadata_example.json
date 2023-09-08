@@ -1,0 +1,232 @@
+{
+    "Dataset": {
+        "dataset_id": "string",
+        "name": "string",
+        "dataset_unique_id": "string",
+        "archive_nid": "string",
+        "status": "string",
+        "first_published": "string",
+        "priority_tags": [
+            "string"
+        ],
+        "high_priority_tags": [
+            "string"
+        ],
+        "identification": {
+            "id": "string",
+            "title": "string",
+            "ddh_urltitle": "string",
+            "subtitle": "string",
+            "description": "string",
+            "acronym": "string",
+            "topics": [
+                {
+                    "id": "string",
+                    "name": "string",
+                    "is_delete": true
+                }
+            ],
+            "practice": {
+                "code": "string",
+                "name": "string"
+            },
+            "work_unit": {
+                "code": "string",
+                "name": "string"
+            },
+            "working_unit_vpu": {
+                "code": "string",
+                "name": "string"
+            },
+            "wb_project_reference": "string",
+            "grant_number": "string",
+            "parent_dataset": {
+                "id": "string",
+                "name": "string"
+            },
+            "collection_id": [
+                "string"
+            ],
+            "collection_id_new": [
+                "string"
+            ],
+            "translated_title": "string",
+            "point_of_contact": [
+                {
+                    "id": "string",
+                    "name": "string",
+                    "role": {
+                        "name": "string",
+                        "code": "string"
+                    },
+                    "email": "string",
+                    "upi": "string",
+                    "externally_visible_email": true,
+                    "is_delete": true
+                }
+            ],
+            "language_supported": [
+                {
+                    "id": "string",
+                    "code": "string",
+                    "name": "string",
+                    "is_delete": true
+                }
+            ],
+            "business_taxonomies": [
+                "string"
+            ],
+            "topical_taxonomies": [
+                "string"
+            ],
+            "citation": "string"
+        },
+        "keywords": [
+            {
+                "id": "string",
+                "name": "string",
+                "is_delete": true
+            }
+        ],
+        "constraints": {
+            "id": "string",
+            "legal": {
+                "access_constraints": "string",
+                "use_constraints": "string",
+                "other_constraints": "string",
+                "disclaimer": "string",
+                "copyright": "string"
+            },
+            "security": {
+                "classification": "string",
+                "exception": "string",
+                "user_note": "string"
+            },
+            "license": {
+                "license_id": "string",
+                "custom_license_information": "string",
+                "license_reference": "string"
+            }
+        },
+        "data_quality": {
+            "id": "string",
+            "data_notes": "string"
+        },
+        "geographical_extent": {
+            "id": "string",
+            "description": "string",
+            "coverage": [
+                {
+                    "id": "string",
+                    "code": "string",
+                    "name": "string",
+                    "is_delete": true
+                }
+            ],
+            "geo_json": "string",
+            "bounding_box": {
+                "west_longitude": "string",
+                "east_longitude": "string",
+                "north_latitude": "string",
+                "south_latitude": "string"
+            },
+            "vertical_extent": {
+                "min_value": "string",
+                "max_value": "string",
+                "vertical_CRS": "string",
+                "vertical_CRS_id": "string"
+            }
+        },
+        "temporal_extent": {
+            "id": "string",
+            "end_date": "string",
+            "start_date": "string",
+            "description": "string",
+            "duration": "string",
+            "coverage": [
+                "string"
+            ]
+        },
+        "temporal_resolution": {
+            "periodicity": "string"
+        },
+        "spatial_resolution": {
+            "id": "string",
+            "granularity": "string",
+            "granularity_list": [
+                "string"
+            ],
+            "pixel_resolution": "string"
+        },
+        "reference_system": {
+            "id": "string",
+            "reference_id": "string",
+            "version": "string",
+            "map_projection": "string"
+        },
+        "lineage": {
+            "id": "string",
+            "sourceType": "string",
+            "source_type_list": [
+                {
+                    "id": "string",
+                    "name": "string",
+                    "is_delete": true
+                }
+            ],
+            "source": "string",
+            "source_reference": "string",
+            "statistical_concept_and_methodology": "string",
+            "base_period": "string",
+            "aggregation_method": "string",
+            "description": "string",
+            "related_links_and_publications": [
+                "string"
+            ],
+            "publication_place": "string",
+            "funding_name_abbreviation_role": [
+                "string"
+            ],
+            "study_type": "string",
+            "deviations_from_sample_design": "string",
+            "other_acknowledgements": "string",
+            "harvest_system": "string",
+            "harvest_system_reference": "string"
+        },
+        "maintenance_information": {
+            "id": "string",
+            "update_frequency": "string",
+            "update_schedule": "string",
+            "maintenance_note": "string",
+            "embargo_date": "string",
+            "embargo_comments": "string",
+            "version_description": "string",
+            "version_production_date": "string",
+            "version_notes": "string"
+        },
+        "subscription": {
+            "id": "string",
+            "subscription_date_from": "string",
+            "subscription_date_to": "string"
+        },
+        "last_updated_date": "string",
+        "resources": [
+            {
+                "resource_id": "string",
+                "resource_unique _id": "string",
+                "name": "string",
+                "resource_type": "string",
+                "description": "string",
+                "url": "string",
+                "format": "string"
+            }
+        ],
+        "indicators": [
+            {
+                "id": "string",
+                "title": "string",
+                "description": "string"
+            }
+        ]
+    }
+}

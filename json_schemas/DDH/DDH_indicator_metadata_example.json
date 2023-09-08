@@ -1,0 +1,45 @@
+{
+    "Indicator": {
+        "id": "string",
+        "unique_id": "string",
+        "archive_nid": "string",
+        "dataset_id": "string",
+        "title": "string",
+        "url": "string",
+        "description": "string",
+        "unit": "string",
+        "fields": [
+            {
+                "id": "string",
+                "name": "string",
+                "title": "string",
+                "type": "string",
+                "format": "string",
+                "rdfType": "string",
+                "description": "string",
+                "constraints": "string",
+                "unit": "string",
+                "unitSystem": "string",
+                "missingValues": [
+                    "string"
+                ],
+                "primaryKey": [
+                    "string"
+                ],
+                "foreignKeys": [
+                    "string"
+                ],
+                "is_delete": true
+            }
+        ],
+        "dataset": {
+            "id": "string",
+            "name": "string"
+        },
+        "lineage": {
+            "id": "string",
+            "harvest_system": "string",
+            "harvest_system_reference": "string"
+        }
+    }
+}

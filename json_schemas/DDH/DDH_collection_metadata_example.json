@@ -1,0 +1,6 @@
+{
+    "collection_code": "string",
+    "collection_title": "string",
+    "collection_description": "string",
+    "is_internal": true
+}

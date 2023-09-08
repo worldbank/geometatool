@@ -1,0 +1,2829 @@
+{
+    "type": "object",
+    "properties": {
+        "repositoryid": {
+            "type": "string"
+        },
+        "published": {
+            "type": "integer"
+        },
+        "overwrite": {
+            "type": "string"
+        },
+        "metadata_information": {
+            "type": "object",
+            "properties": {
+                "title": {
+                    "type": "string"
+                },
+                "idno": {
+                    "type": "string"
+                },
+                "producers": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": "string"
+                            },
+                            "abbr": {
+                                "type": "string"
+                            },
+                            "affiliation": {
+                                "type": "string"
+                            },
+                            "role": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "production_date": {
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string"
+                }
+            }
+        },
+        "description": {
+            "type": "object",
+            "properties": {
+                "idno": {
+                    "type": "string"
+                },
+                "language": {
+                    "type": "string"
+                },
+                "characterSet": {
+                    "type": "object",
+                    "properties": {
+                        "codeListValue": {
+                            "type": "string"
+                        },
+                        "codeList": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "parentIdentifier": {
+                    "type": "string"
+                },
+                "hierarchyLevel": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "hierarchyLevelName": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "contact": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "individualName": {
+                                "type": "string"
+                            },
+                            "organisationName": {
+                                "type": "string"
+                            },
+                            "positionName": {
+                                "type": "string"
+                            },
+                            "contactInfo": {
+                                "type": "object",
+                                "properties": {
+                                    "phone": {
+                                        "type": "object",
+                                        "properties": {
+                                            "voice": {
+                                                "type": "string"
+                                            },
+                                            "facsimile": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "address": {
+                                        "type": "object",
+                                        "properties": {
+                                            "deliveryPoint": {
+                                                "type": "string"
+                                            },
+                                            "city": {
+                                                "type": "string"
+                                            },
+                                            "postalCode": {
+                                                "type": "string"
+                                            },
+                                            "country": {
+                                                "type": "string"
+                                            },
+                                            "elctronicMailAddress": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "onlineResource": {
+                                        "type": "object",
+                                        "properties": {
+                                            "linkage": {
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "description": {
+                                                "type": "string"
+                                            },
+                                            "protocol": {
+                                                "type": "string"
+                                            },
+                                            "function": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "role": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "dateStamp": {
+                    "type": "string"
+                },
+                "metadataStandardName": {
+                    "type": "string"
+                },
+                "metadataStandardVersion": {
+                    "type": "string"
+                },
+                "dataSetURI": {
+                    "type": "string"
+                },
+                "spatialRepresentationInfo": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "vectorSpatialRepresentation": {
+                                "type": "object",
+                                "properties": {
+                                    "topologyLevel": {
+                                        "type": "string"
+                                    },
+                                    "geometricObjects": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "geometricObjectType": {
+                                                    "type": "string"
+                                                },
+                                                "geometricObjectCount": {
+                                                    "type": "integer"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "gridSpatialRepresentation": {
+                                "type": "object",
+                                "properties": {
+                                    "numberOfDimensions": {
+                                        "type": "integer"
+                                    },
+                                    "axisDimensionProperties": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "dimensionName": {
+                                                    "type": "string"
+                                                },
+                                                "dimensionSize": {
+                                                    "type": "number"
+                                                },
+                                                "resolution": {
+                                                    "type": "number"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "cellGeometry": {
+                                        "type": "string"
+                                    },
+                                    "transformationParameterAvailability": {
+                                        "type": "boolean"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "referenceSystemInfo": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "code": {
+                                "type": "string"
+                            },
+                            "codeSpace": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "identificationInfo": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "citation": {
+                                "type": "object",
+                                "properties": {
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "alternateTitle": {
+                                        "type": "string"
+                                    },
+                                    "date": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "date": {
+                                                    "type": "string"
+                                                },
+                                                "type": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "edition": {
+                                        "type": "string"
+                                    },
+                                    "editionDate": {
+                                        "type": "string"
+                                    },
+                                    "identifier": {
+                                        "type": "object",
+                                        "properties": {
+                                            "authority": {
+                                                "type": "string"
+                                            },
+                                            "code": {
+                                                "type": "null"
+                                            }
+                                        }
+                                    },
+                                    "citedResponsibleParty": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "individualName": {
+                                                    "type": "string"
+                                                },
+                                                "organisationName": {
+                                                    "type": "string"
+                                                },
+                                                "positionName": {
+                                                    "type": "string"
+                                                },
+                                                "contactInfo": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "phone": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "voice": {
+                                                                    "type": "string"
+                                                                },
+                                                                "facsimile": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        },
+                                                        "address": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "deliveryPoint": {
+                                                                    "type": "string"
+                                                                },
+                                                                "city": {
+                                                                    "type": "string"
+                                                                },
+                                                                "postalCode": {
+                                                                    "type": "string"
+                                                                },
+                                                                "country": {
+                                                                    "type": "string"
+                                                                },
+                                                                "elctronicMailAddress": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        },
+                                                        "onlineResource": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "linkage": {
+                                                                    "type": "string"
+                                                                },
+                                                                "name": {
+                                                                    "type": "string"
+                                                                },
+                                                                "description": {
+                                                                    "type": "string"
+                                                                },
+                                                                "protocol": {
+                                                                    "type": "string"
+                                                                },
+                                                                "function": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "role": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "presentationForm": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "series": {
+                                        "type": "object",
+                                        "properties": {
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "issueIdentification": {
+                                                "type": "string"
+                                            },
+                                            "page": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "otherCitationDetails": {
+                                        "type": "string"
+                                    },
+                                    "collectiveTitle": {
+                                        "type": "string"
+                                    },
+                                    "ISBN": {
+                                        "type": "string"
+                                    },
+                                    "ISSN": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "abstract": {
+                                "type": "string"
+                            },
+                            "purpose": {
+                                "type": "string"
+                            },
+                            "credit": {
+                                "type": "string"
+                            },
+                            "status": {
+                                "type": "string"
+                            },
+                            "pointOfContact": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "individualName": {
+                                            "type": "string"
+                                        },
+                                        "organisationName": {
+                                            "type": "string"
+                                        },
+                                        "positionName": {
+                                            "type": "string"
+                                        },
+                                        "contactInfo": {
+                                            "type": "object",
+                                            "properties": {
+                                                "phone": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "voice": {
+                                                            "type": "string"
+                                                        },
+                                                        "facsimile": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                },
+                                                "address": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "deliveryPoint": {
+                                                            "type": "string"
+                                                        },
+                                                        "city": {
+                                                            "type": "string"
+                                                        },
+                                                        "postalCode": {
+                                                            "type": "string"
+                                                        },
+                                                        "country": {
+                                                            "type": "string"
+                                                        },
+                                                        "elctronicMailAddress": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                },
+                                                "onlineResource": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "linkage": {
+                                                            "type": "string"
+                                                        },
+                                                        "name": {
+                                                            "type": "string"
+                                                        },
+                                                        "description": {
+                                                            "type": "string"
+                                                        },
+                                                        "protocol": {
+                                                            "type": "string"
+                                                        },
+                                                        "function": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "role": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            },
+                            "resourceMaintenance": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "maintenanceAndUpdateFrequency": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            },
+                            "graphicOverview": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "fileName": {
+                                            "type": "string"
+                                        },
+                                        "fileDescription": {
+                                            "type": "string"
+                                        },
+                                        "fileType": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            },
+                            "resourceFormat": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "version": {
+                                            "type": "string"
+                                        },
+                                        "amendmentNumber": {
+                                            "type": "string"
+                                        },
+                                        "specification": {
+                                            "type": "string"
+                                        },
+                                        "fileDecompressionTechnique": {
+                                            "type": "string"
+                                        },
+                                        "FormatDistributor": {
+                                            "type": "object",
+                                            "properties": {
+                                                "individualName": {
+                                                    "type": "string"
+                                                },
+                                                "organisationName": {
+                                                    "type": "string"
+                                                },
+                                                "positionName": {
+                                                    "type": "string"
+                                                },
+                                                "contactInfo": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "phone": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "voice": {
+                                                                    "type": "string"
+                                                                },
+                                                                "facsimile": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        },
+                                                        "address": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "deliveryPoint": {
+                                                                    "type": "string"
+                                                                },
+                                                                "city": {
+                                                                    "type": "string"
+                                                                },
+                                                                "postalCode": {
+                                                                    "type": "string"
+                                                                },
+                                                                "country": {
+                                                                    "type": "string"
+                                                                },
+                                                                "elctronicMailAddress": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        },
+                                                        "onlineResource": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "linkage": {
+                                                                    "type": "string"
+                                                                },
+                                                                "name": {
+                                                                    "type": "string"
+                                                                },
+                                                                "description": {
+                                                                    "type": "string"
+                                                                },
+                                                                "protocol": {
+                                                                    "type": "string"
+                                                                },
+                                                                "function": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "role": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "descriptiveKeywords": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "type": {
+                                            "type": "string"
+                                        },
+                                        "keyword": {
+                                            "type": "string"
+                                        },
+                                        "thesaurusName": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            },
+                            "resourceConstraints": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "legalConstraints": {
+                                            "type": "object",
+                                            "properties": {
+                                                "useLimitation": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "accessConstraints": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "useConstraints": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "otherConstraints": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "string"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "securityConstraints": {
+                                            "type": "object",
+                                            "properties": {
+                                                "useLimitation": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "classification": {
+                                                    "type": "string"
+                                                },
+                                                "userNote": {
+                                                    "type": "string"
+                                                },
+                                                "classificationSystem": {
+                                                    "type": "string"
+                                                },
+                                                "handlingDescription": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "resourceSpecificUsage": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "specificUsage": {
+                                            "type": "string"
+                                        },
+                                        "usageDateTime": {
+                                            "type": "string"
+                                        },
+                                        "userDeterminedLimitations": {
+                                            "type": "string"
+                                        },
+                                        "userContactInfo": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "individualName": {
+                                                        "type": "string"
+                                                    },
+                                                    "organisationName": {
+                                                        "type": "string"
+                                                    },
+                                                    "positionName": {
+                                                        "type": "string"
+                                                    },
+                                                    "contactInfo": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "phone": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "voice": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "facsimile": {
+                                                                        "type": "string"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "address": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "deliveryPoint": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "city": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "postalCode": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "country": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "elctronicMailAddress": {
+                                                                        "type": "string"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "onlineResource": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "linkage": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "name": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "description": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "protocol": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "function": {
+                                                                        "type": "string"
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "role": {
+                                                        "type": "string"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "aggregationInfo": {
+                                "type": "object",
+                                "properties": {
+                                    "aggregateDataSetName": {
+                                        "type": "string"
+                                    },
+                                    "aggregateDataSetIdentifier": {
+                                        "type": "string"
+                                    },
+                                    "associationType": {
+                                        "type": "string"
+                                    },
+                                    "initiativeType": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "extent": {
+                                "type": "object",
+                                "properties": {
+                                    "geographicElement": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "geographicBoundingBox": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "westBoundLongitude": {
+                                                            "type": "number"
+                                                        },
+                                                        "eastBoundLongitude": {
+                                                            "type": "number"
+                                                        },
+                                                        "southBoundLatitude": {
+                                                            "type": "number"
+                                                        },
+                                                        "northBoundLatitude": {
+                                                            "type": "number"
+                                                        }
+                                                    }
+                                                },
+                                                "geographicDescription": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "temporalElement": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "extent": {
+                                                    "type": "null"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "verticalElement": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "minimumValue": {
+                                                    "type": "number"
+                                                },
+                                                "maximumValue": {
+                                                    "type": "number"
+                                                },
+                                                "verticalCRS": {
+                                                    "type": "null"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "spatialRepresentationType": {
+                                "type": "string"
+                            },
+                            "spatialResolution": {
+                                "type": "object",
+                                "properties": {
+                                    "uom": {
+                                        "type": "string"
+                                    },
+                                    "value": {
+                                        "type": "number"
+                                    }
+                                }
+                            },
+                            "language": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "characterSet": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "codeListValue": {
+                                            "type": "string"
+                                        },
+                                        "codeList": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            },
+                            "topicCategory": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "supplementalInformation": {
+                                "type": "string"
+                            },
+                            "serviceIdentification": {
+                                "type": "object",
+                                "properties": {
+                                    "serviceType": {
+                                        "type": "string"
+                                    },
+                                    "serviceTypeVersion": {
+                                        "type": "string"
+                                    },
+                                    "accessProperties": {
+                                        "type": "object",
+                                        "properties": {
+                                            "fees": {
+                                                "type": "string"
+                                            },
+                                            "plannedAvailableDateTime": {
+                                                "type": "string"
+                                            },
+                                            "orderingInstructions": {
+                                                "type": "string"
+                                            },
+                                            "turnaround": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "restrictions": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "legalConstraints": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "useLimitation": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "type": "string"
+                                                            }
+                                                        },
+                                                        "accessConstraints": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "type": "string"
+                                                            }
+                                                        },
+                                                        "useConstraints": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "type": "string"
+                                                            }
+                                                        },
+                                                        "otherConstraints": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "type": "string"
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "securityConstraints": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "useLimitation": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "type": "string"
+                                                            }
+                                                        },
+                                                        "classification": {
+                                                            "type": "string"
+                                                        },
+                                                        "userNote": {
+                                                            "type": "string"
+                                                        },
+                                                        "classificationSystem": {
+                                                            "type": "string"
+                                                        },
+                                                        "handlingDescription": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "keywords": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "type": {
+                                                    "type": "string"
+                                                },
+                                                "keyword": {
+                                                    "type": "string"
+                                                },
+                                                "thesaurusName": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "coupledResource": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "operationName": {
+                                                    "type": "string"
+                                                },
+                                                "identifier": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "couplingType": {
+                                        "type": "string"
+                                    },
+                                    "containsOperations": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "operationName": {
+                                                    "type": "string"
+                                                },
+                                                "DCP": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "operationDescription": {
+                                                    "type": "string"
+                                                },
+                                                "invocationName": {
+                                                    "type": "string"
+                                                },
+                                                "parameters": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "name": {
+                                                                "type": "string"
+                                                            },
+                                                            "direction": {
+                                                                "type": "string"
+                                                            },
+                                                            "description": {
+                                                                "type": "string"
+                                                            },
+                                                            "optionality": {
+                                                                "type": "string"
+                                                            },
+                                                            "repeatability": {
+                                                                "type": "boolean"
+                                                            },
+                                                            "valueType": {
+                                                                "type": "string"
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "connectPoint": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "linkage": {
+                                                            "type": "string"
+                                                        },
+                                                        "name": {
+                                                            "type": "string"
+                                                        },
+                                                        "description": {
+                                                            "type": "string"
+                                                        },
+                                                        "protocol": {
+                                                            "type": "string"
+                                                        },
+                                                        "function": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                },
+                                                "dependsOn": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "operatesOn": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "uuidref": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "contentInfo": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "featureCatalogueDescription": {
+                                "type": "object",
+                                "properties": {
+                                    "complianceCode": {
+                                        "type": "boolean"
+                                    },
+                                    "language": {
+                                        "type": "string"
+                                    },
+                                    "includedWithDataset": {
+                                        "type": "boolean"
+                                    },
+                                    "featureCatalogueCitation": {
+                                        "type": "object",
+                                        "properties": {
+                                            "title": {
+                                                "type": "string"
+                                            },
+                                            "alternateTitle": {
+                                                "type": "string"
+                                            },
+                                            "date": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "date": {
+                                                            "type": "string"
+                                                        },
+                                                        "type": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "edition": {
+                                                "type": "string"
+                                            },
+                                            "editionDate": {
+                                                "type": "string"
+                                            },
+                                            "identifier": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "authority": {
+                                                        "type": "string"
+                                                    },
+                                                    "code": {
+                                                        "type": "null"
+                                                    }
+                                                }
+                                            },
+                                            "citedResponsibleParty": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "individualName": {
+                                                            "type": "string"
+                                                        },
+                                                        "organisationName": {
+                                                            "type": "string"
+                                                        },
+                                                        "positionName": {
+                                                            "type": "string"
+                                                        },
+                                                        "contactInfo": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "phone": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                        "voice": {
+                                                                            "type": "string"
+                                                                        },
+                                                                        "facsimile": {
+                                                                            "type": "string"
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "address": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                        "deliveryPoint": {
+                                                                            "type": "string"
+                                                                        },
+                                                                        "city": {
+                                                                            "type": "string"
+                                                                        },
+                                                                        "postalCode": {
+                                                                            "type": "string"
+                                                                        },
+                                                                        "country": {
+                                                                            "type": "string"
+                                                                        },
+                                                                        "elctronicMailAddress": {
+                                                                            "type": "string"
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "onlineResource": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                        "linkage": {
+                                                                            "type": "string"
+                                                                        },
+                                                                        "name": {
+                                                                            "type": "string"
+                                                                        },
+                                                                        "description": {
+                                                                            "type": "string"
+                                                                        },
+                                                                        "protocol": {
+                                                                            "type": "string"
+                                                                        },
+                                                                        "function": {
+                                                                            "type": "string"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "role": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "presentationForm": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "series": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "name": {
+                                                        "type": "string"
+                                                    },
+                                                    "issueIdentification": {
+                                                        "type": "string"
+                                                    },
+                                                    "page": {
+                                                        "type": "string"
+                                                    }
+                                                }
+                                            },
+                                            "otherCitationDetails": {
+                                                "type": "string"
+                                            },
+                                            "collectiveTitle": {
+                                                "type": "string"
+                                            },
+                                            "ISBN": {
+                                                "type": "string"
+                                            },
+                                            "ISSN": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "coverageDescription": {
+                                "type": "object",
+                                "properties": {
+                                    "contentType": {
+                                        "type": "string"
+                                    },
+                                    "dimension": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "name": {
+                                                    "type": "string"
+                                                },
+                                                "type": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "distributionInfo": {
+                    "type": "object",
+                    "properties": {
+                        "distributionFormat": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "version": {
+                                        "type": "string"
+                                    },
+                                    "amendmentNumber": {
+                                        "type": "string"
+                                    },
+                                    "specification": {
+                                        "type": "string"
+                                    },
+                                    "fileDecompressionTechnique": {
+                                        "type": "string"
+                                    },
+                                    "FormatDistributor": {
+                                        "type": "object",
+                                        "properties": {
+                                            "individualName": {
+                                                "type": "string"
+                                            },
+                                            "organisationName": {
+                                                "type": "string"
+                                            },
+                                            "positionName": {
+                                                "type": "string"
+                                            },
+                                            "contactInfo": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "phone": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "voice": {
+                                                                "type": "string"
+                                                            },
+                                                            "facsimile": {
+                                                                "type": "string"
+                                                            }
+                                                        }
+                                                    },
+                                                    "address": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "deliveryPoint": {
+                                                                "type": "string"
+                                                            },
+                                                            "city": {
+                                                                "type": "string"
+                                                            },
+                                                            "postalCode": {
+                                                                "type": "string"
+                                                            },
+                                                            "country": {
+                                                                "type": "string"
+                                                            },
+                                                            "elctronicMailAddress": {
+                                                                "type": "string"
+                                                            }
+                                                        }
+                                                    },
+                                                    "onlineResource": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "linkage": {
+                                                                "type": "string"
+                                                            },
+                                                            "name": {
+                                                                "type": "string"
+                                                            },
+                                                            "description": {
+                                                                "type": "string"
+                                                            },
+                                                            "protocol": {
+                                                                "type": "string"
+                                                            },
+                                                            "function": {
+                                                                "type": "string"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "role": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "distributor": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "individualName": {
+                                        "type": "string"
+                                    },
+                                    "organisationName": {
+                                        "type": "string"
+                                    },
+                                    "positionName": {
+                                        "type": "string"
+                                    },
+                                    "contactInfo": {
+                                        "type": "object",
+                                        "properties": {
+                                            "phone": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "voice": {
+                                                        "type": "string"
+                                                    },
+                                                    "facsimile": {
+                                                        "type": "string"
+                                                    }
+                                                }
+                                            },
+                                            "address": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "deliveryPoint": {
+                                                        "type": "string"
+                                                    },
+                                                    "city": {
+                                                        "type": "string"
+                                                    },
+                                                    "postalCode": {
+                                                        "type": "string"
+                                                    },
+                                                    "country": {
+                                                        "type": "string"
+                                                    },
+                                                    "elctronicMailAddress": {
+                                                        "type": "string"
+                                                    }
+                                                }
+                                            },
+                                            "onlineResource": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "linkage": {
+                                                        "type": "string"
+                                                    },
+                                                    "name": {
+                                                        "type": "string"
+                                                    },
+                                                    "description": {
+                                                        "type": "string"
+                                                    },
+                                                    "protocol": {
+                                                        "type": "string"
+                                                    },
+                                                    "function": {
+                                                        "type": "string"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "role": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        },
+                        "transferOptions": {
+                            "type": "object",
+                            "properties": {
+                                "onLine": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "dctype": {
+                                                "type": "string"
+                                            },
+                                            "dcformat": {
+                                                "type": "string"
+                                            },
+                                            "title": {
+                                                "type": "string"
+                                            },
+                                            "author": {
+                                                "type": "string"
+                                            },
+                                            "dcdate": {
+                                                "type": "string"
+                                            },
+                                            "country": {
+                                                "type": "string"
+                                            },
+                                            "language": {
+                                                "type": "string"
+                                            },
+                                            "contributor": {
+                                                "type": "string"
+                                            },
+                                            "publisher": {
+                                                "type": "string"
+                                            },
+                                            "rights": {
+                                                "type": "string"
+                                            },
+                                            "description": {
+                                                "type": "string"
+                                            },
+                                            "abstract": {
+                                                "type": "string"
+                                            },
+                                            "toc": {
+                                                "type": "string"
+                                            },
+                                            "filename": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "dataQualityInfo": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "scope": {
+                                "type": "string"
+                            },
+                            "report": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "DQ_DomainConsistency": {
+                                            "type": "object",
+                                            "properties": {
+                                                "result": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "nameOfMeasure": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "type": "string"
+                                                            }
+                                                        },
+                                                        "measureIdentification": {
+                                                            "type": "string"
+                                                        },
+                                                        "measureDescription": {
+                                                            "type": "string"
+                                                        },
+                                                        "evaluationMethodType": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "type": "string"
+                                                            }
+                                                        },
+                                                        "evaluationMethodDescription": {
+                                                            "type": "string"
+                                                        },
+                                                        "evaluationProcedure": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "title": {
+                                                                    "type": "string"
+                                                                },
+                                                                "alternateTitle": {
+                                                                    "type": "string"
+                                                                },
+                                                                "date": {
+                                                                    "type": "array",
+                                                                    "items": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "date": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "type": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "edition": {
+                                                                    "type": "string"
+                                                                },
+                                                                "editionDate": {
+                                                                    "type": "string"
+                                                                },
+                                                                "identifier": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                        "authority": {
+                                                                            "type": "string"
+                                                                        },
+                                                                        "code": {
+                                                                            "type": "null"
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "citedResponsibleParty": {
+                                                                    "type": "array",
+                                                                    "items": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "individualName": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "organisationName": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "positionName": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "contactInfo": {
+                                                                                "type": "object",
+                                                                                "properties": {
+                                                                                    "phone": {
+                                                                                        "type": "object",
+                                                                                        "properties": {
+                                                                                            "voice": {
+                                                                                                "type": "string"
+                                                                                            },
+                                                                                            "facsimile": {
+                                                                                                "type": "string"
+                                                                                            }
+                                                                                        }
+                                                                                    },
+                                                                                    "address": {
+                                                                                        "type": "object",
+                                                                                        "properties": {
+                                                                                            "deliveryPoint": {
+                                                                                                "type": "string"
+                                                                                            },
+                                                                                            "city": {
+                                                                                                "type": "string"
+                                                                                            },
+                                                                                            "postalCode": {
+                                                                                                "type": "string"
+                                                                                            },
+                                                                                            "country": {
+                                                                                                "type": "string"
+                                                                                            },
+                                                                                            "elctronicMailAddress": {
+                                                                                                "type": "string"
+                                                                                            }
+                                                                                        }
+                                                                                    },
+                                                                                    "onlineResource": {
+                                                                                        "type": "object",
+                                                                                        "properties": {
+                                                                                            "linkage": {
+                                                                                                "type": "string"
+                                                                                            },
+                                                                                            "name": {
+                                                                                                "type": "string"
+                                                                                            },
+                                                                                            "description": {
+                                                                                                "type": "string"
+                                                                                            },
+                                                                                            "protocol": {
+                                                                                                "type": "string"
+                                                                                            },
+                                                                                            "function": {
+                                                                                                "type": "string"
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            },
+                                                                            "role": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "presentationForm": {
+                                                                    "type": "array",
+                                                                    "items": {
+                                                                        "type": "string"
+                                                                    }
+                                                                },
+                                                                "series": {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                        "name": {
+                                                                            "type": "string"
+                                                                        },
+                                                                        "issueIdentification": {
+                                                                            "type": "string"
+                                                                        },
+                                                                        "page": {
+                                                                            "type": "string"
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "otherCitationDetails": {
+                                                                    "type": "string"
+                                                                },
+                                                                "collectiveTitle": {
+                                                                    "type": "string"
+                                                                },
+                                                                "ISBN": {
+                                                                    "type": "string"
+                                                                },
+                                                                "ISSN": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        },
+                                                        "dateTime": {
+                                                            "type": "string"
+                                                        },
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "specification": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "title": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "alternateTitle": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "date": {
+                                                                                "type": "array",
+                                                                                "items": {
+                                                                                    "type": "object",
+                                                                                    "properties": {
+                                                                                        "date": {
+                                                                                            "type": "string"
+                                                                                        },
+                                                                                        "type": {
+                                                                                            "type": "string"
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            },
+                                                                            "edition": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "editionDate": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "identifier": {
+                                                                                "type": "object",
+                                                                                "properties": {
+                                                                                    "authority": {
+                                                                                        "type": "string"
+                                                                                    },
+                                                                                    "code": {
+                                                                                        "type": "null"
+                                                                                    }
+                                                                                }
+                                                                            },
+                                                                            "citedResponsibleParty": {
+                                                                                "type": "array",
+                                                                                "items": {
+                                                                                    "type": "object",
+                                                                                    "properties": {
+                                                                                        "individualName": {
+                                                                                            "type": "string"
+                                                                                        },
+                                                                                        "organisationName": {
+                                                                                            "type": "string"
+                                                                                        },
+                                                                                        "positionName": {
+                                                                                            "type": "string"
+                                                                                        },
+                                                                                        "contactInfo": {
+                                                                                            "type": "object",
+                                                                                            "properties": {
+                                                                                                "phone": {
+                                                                                                    "type": "object",
+                                                                                                    "properties": {
+                                                                                                        "voice": {
+                                                                                                            "type": "string"
+                                                                                                        },
+                                                                                                        "facsimile": {
+                                                                                                            "type": "string"
+                                                                                                        }
+                                                                                                    }
+                                                                                                },
+                                                                                                "address": {
+                                                                                                    "type": "object",
+                                                                                                    "properties": {
+                                                                                                        "deliveryPoint": {
+                                                                                                            "type": "string"
+                                                                                                        },
+                                                                                                        "city": {
+                                                                                                            "type": "string"
+                                                                                                        },
+                                                                                                        "postalCode": {
+                                                                                                            "type": "string"
+                                                                                                        },
+                                                                                                        "country": {
+                                                                                                            "type": "string"
+                                                                                                        },
+                                                                                                        "elctronicMailAddress": {
+                                                                                                            "type": "string"
+                                                                                                        }
+                                                                                                    }
+                                                                                                },
+                                                                                                "onlineResource": {
+                                                                                                    "type": "object",
+                                                                                                    "properties": {
+                                                                                                        "linkage": {
+                                                                                                            "type": "string"
+                                                                                                        },
+                                                                                                        "name": {
+                                                                                                            "type": "string"
+                                                                                                        },
+                                                                                                        "description": {
+                                                                                                            "type": "string"
+                                                                                                        },
+                                                                                                        "protocol": {
+                                                                                                            "type": "string"
+                                                                                                        },
+                                                                                                        "function": {
+                                                                                                            "type": "string"
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        },
+                                                                                        "role": {
+                                                                                            "type": "string"
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            },
+                                                                            "presentationForm": {
+                                                                                "type": "array",
+                                                                                "items": {
+                                                                                    "type": "string"
+                                                                                }
+                                                                            },
+                                                                            "series": {
+                                                                                "type": "object",
+                                                                                "properties": {
+                                                                                    "name": {
+                                                                                        "type": "string"
+                                                                                    },
+                                                                                    "issueIdentification": {
+                                                                                        "type": "string"
+                                                                                    },
+                                                                                    "page": {
+                                                                                        "type": "string"
+                                                                                    }
+                                                                                }
+                                                                            },
+                                                                            "otherCitationDetails": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "collectiveTitle": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "ISBN": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "ISSN": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "explanation": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "pass": {
+                                                                        "type": "boolean"
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "lineage": {
+                                "type": "object",
+                                "properties": {
+                                    "statement": {
+                                        "type": "string"
+                                    },
+                                    "processStep": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "description": {
+                                                    "type": "string"
+                                                },
+                                                "rationale": {
+                                                    "type": "string"
+                                                },
+                                                "dateTime": {
+                                                    "type": "string"
+                                                },
+                                                "processor": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "individualName": {
+                                                                "type": "string"
+                                                            },
+                                                            "organisationName": {
+                                                                "type": "string"
+                                                            },
+                                                            "positionName": {
+                                                                "type": "string"
+                                                            },
+                                                            "contactInfo": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "phone": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "voice": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "facsimile": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "address": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "deliveryPoint": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "city": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "postalCode": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "country": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "elctronicMailAddress": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "onlineResource": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "linkage": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "name": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "description": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "protocol": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "function": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "role": {
+                                                                "type": "string"
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "source": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "description": {
+                                                                "type": "string"
+                                                            },
+                                                            "sourceCitation": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "title": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "alternateTitle": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "date": {
+                                                                        "type": "array",
+                                                                        "items": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                                "date": {
+                                                                                    "type": "string"
+                                                                                },
+                                                                                "type": {
+                                                                                    "type": "string"
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "edition": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "editionDate": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "identifier": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "authority": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "code": {
+                                                                                "type": "null"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "citedResponsibleParty": {
+                                                                        "type": "array",
+                                                                        "items": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                                "individualName": {
+                                                                                    "type": "string"
+                                                                                },
+                                                                                "organisationName": {
+                                                                                    "type": "string"
+                                                                                },
+                                                                                "positionName": {
+                                                                                    "type": "string"
+                                                                                },
+                                                                                "contactInfo": {
+                                                                                    "type": "object",
+                                                                                    "properties": {
+                                                                                        "phone": {
+                                                                                            "type": "object",
+                                                                                            "properties": {
+                                                                                                "voice": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "facsimile": {
+                                                                                                    "type": "string"
+                                                                                                }
+                                                                                            }
+                                                                                        },
+                                                                                        "address": {
+                                                                                            "type": "object",
+                                                                                            "properties": {
+                                                                                                "deliveryPoint": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "city": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "postalCode": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "country": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "elctronicMailAddress": {
+                                                                                                    "type": "string"
+                                                                                                }
+                                                                                            }
+                                                                                        },
+                                                                                        "onlineResource": {
+                                                                                            "type": "object",
+                                                                                            "properties": {
+                                                                                                "linkage": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "name": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "description": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "protocol": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "function": {
+                                                                                                    "type": "string"
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "role": {
+                                                                                    "type": "string"
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "presentationForm": {
+                                                                        "type": "array",
+                                                                        "items": {
+                                                                            "type": "string"
+                                                                        }
+                                                                    },
+                                                                    "series": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "name": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "issueIdentification": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "page": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "otherCitationDetails": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "collectiveTitle": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "ISBN": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "ISSN": {
+                                                                        "type": "string"
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "metadataMaintenance": {
+                    "type": "object",
+                    "properties": {
+                        "maintenanceAndUpdateFrequency": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "portrayalCatalogueInfo": {
+                    "type": "object",
+                    "properties": {
+                        "portrayalCatalogueCitation": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "alternateTitle": {
+                                        "type": "string"
+                                    },
+                                    "date": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "date": {
+                                                    "type": "string"
+                                                },
+                                                "type": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "edition": {
+                                        "type": "string"
+                                    },
+                                    "editionDate": {
+                                        "type": "string"
+                                    },
+                                    "identifier": {
+                                        "type": "object",
+                                        "properties": {
+                                            "authority": {
+                                                "type": "string"
+                                            },
+                                            "code": {
+                                                "type": "null"
+                                            }
+                                        }
+                                    },
+                                    "citedResponsibleParty": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "individualName": {
+                                                    "type": "string"
+                                                },
+                                                "organisationName": {
+                                                    "type": "string"
+                                                },
+                                                "positionName": {
+                                                    "type": "string"
+                                                },
+                                                "contactInfo": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "phone": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "voice": {
+                                                                    "type": "string"
+                                                                },
+                                                                "facsimile": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        },
+                                                        "address": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "deliveryPoint": {
+                                                                    "type": "string"
+                                                                },
+                                                                "city": {
+                                                                    "type": "string"
+                                                                },
+                                                                "postalCode": {
+                                                                    "type": "string"
+                                                                },
+                                                                "country": {
+                                                                    "type": "string"
+                                                                },
+                                                                "elctronicMailAddress": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        },
+                                                        "onlineResource": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "linkage": {
+                                                                    "type": "string"
+                                                                },
+                                                                "name": {
+                                                                    "type": "string"
+                                                                },
+                                                                "description": {
+                                                                    "type": "string"
+                                                                },
+                                                                "protocol": {
+                                                                    "type": "string"
+                                                                },
+                                                                "function": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "role": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "presentationForm": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "series": {
+                                        "type": "object",
+                                        "properties": {
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "issueIdentification": {
+                                                "type": "string"
+                                            },
+                                            "page": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "otherCitationDetails": {
+                                        "type": "string"
+                                    },
+                                    "collectiveTitle": {
+                                        "type": "string"
+                                    },
+                                    "ISBN": {
+                                        "type": "string"
+                                    },
+                                    "ISSN": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "metadataExtensionInfo": {
+                    "type": "null"
+                },
+                "applicationSchemaInformation": {
+                    "type": "null"
+                },
+                "thesaurusInfo": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "title": {
+                                "type": "string"
+                            },
+                            "alternateTitle": {
+                                "type": "string"
+                            },
+                            "date": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "date": {
+                                            "type": "string"
+                                        },
+                                        "type": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            },
+                            "edition": {
+                                "type": "string"
+                            },
+                            "editionDate": {
+                                "type": "string"
+                            },
+                            "identifier": {
+                                "type": "object",
+                                "properties": {
+                                    "authority": {
+                                        "type": "string"
+                                    },
+                                    "code": {
+                                        "type": "null"
+                                    }
+                                }
+                            },
+                            "citedResponsibleParty": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "individualName": {
+                                            "type": "string"
+                                        },
+                                        "organisationName": {
+                                            "type": "string"
+                                        },
+                                        "positionName": {
+                                            "type": "string"
+                                        },
+                                        "contactInfo": {
+                                            "type": "object",
+                                            "properties": {
+                                                "phone": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "voice": {
+                                                            "type": "string"
+                                                        },
+                                                        "facsimile": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                },
+                                                "address": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "deliveryPoint": {
+                                                            "type": "string"
+                                                        },
+                                                        "city": {
+                                                            "type": "string"
+                                                        },
+                                                        "postalCode": {
+                                                            "type": "string"
+                                                        },
+                                                        "country": {
+                                                            "type": "string"
+                                                        },
+                                                        "elctronicMailAddress": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                },
+                                                "onlineResource": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "linkage": {
+                                                            "type": "string"
+                                                        },
+                                                        "name": {
+                                                            "type": "string"
+                                                        },
+                                                        "description": {
+                                                            "type": "string"
+                                                        },
+                                                        "protocol": {
+                                                            "type": "string"
+                                                        },
+                                                        "function": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "role": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            },
+                            "presentationForm": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "series": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "issueIdentification": {
+                                        "type": "string"
+                                    },
+                                    "page": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "otherCitationDetails": {
+                                "type": "string"
+                            },
+                            "collectiveTitle": {
+                                "type": "string"
+                            },
+                            "ISBN": {
+                                "type": "string"
+                            },
+                            "ISSN": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "feature_catalogue": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "scope": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "fieldOfApplication": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "versionNumber": {
+                            "type": "string"
+                        },
+                        "versionDate": {
+                            "type": "object",
+                            "properties": {
+                                "date": {
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "producer": {
+                            "type": "object",
+                            "properties": {
+                                "individualName": {
+                                    "type": "string"
+                                },
+                                "organisationName": {
+                                    "type": "string"
+                                },
+                                "positionName": {
+                                    "type": "string"
+                                },
+                                "contactInfo": {
+                                    "type": "object",
+                                    "properties": {
+                                        "phone": {
+                                            "type": "object",
+                                            "properties": {
+                                                "voice": {
+                                                    "type": "string"
+                                                },
+                                                "facsimile": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        },
+                                        "address": {
+                                            "type": "object",
+                                            "properties": {
+                                                "deliveryPoint": {
+                                                    "type": "string"
+                                                },
+                                                "city": {
+                                                    "type": "string"
+                                                },
+                                                "postalCode": {
+                                                    "type": "string"
+                                                },
+                                                "country": {
+                                                    "type": "string"
+                                                },
+                                                "elctronicMailAddress": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        },
+                                        "onlineResource": {
+                                            "type": "object",
+                                            "properties": {
+                                                "linkage": {
+                                                    "type": "string"
+                                                },
+                                                "name": {
+                                                    "type": "string"
+                                                },
+                                                "description": {
+                                                    "type": "string"
+                                                },
+                                                "protocol": {
+                                                    "type": "string"
+                                                },
+                                                "function": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "role": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "functionalLanguage": {
+                            "type": "string"
+                        },
+                        "featureType": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "typeName": {
+                                        "type": "string"
+                                    },
+                                    "definition": {
+                                        "type": "string"
+                                    },
+                                    "code": {
+                                        "type": "string"
+                                    },
+                                    "isAbstract": {
+                                        "type": "boolean"
+                                    },
+                                    "aliases": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "carrierOfCharacteristics": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "memberName": {
+                                                    "type": "string"
+                                                },
+                                                "definition": {
+                                                    "type": "string"
+                                                },
+                                                "cardinality": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "lower": {
+                                                            "type": "integer"
+                                                        },
+                                                        "upper": {
+                                                            "type": "integer"
+                                                        }
+                                                    }
+                                                },
+                                                "code": {
+                                                    "type": "string"
+                                                },
+                                                "valueMeasurementUnit": {
+                                                    "type": "string"
+                                                },
+                                                "valueType": {
+                                                    "type": "string"
+                                                },
+                                                "listedValue": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "label": {
+                                                                "type": "string"
+                                                            },
+                                                            "code": {
+                                                                "type": "string"
+                                                            },
+                                                            "definition": {
+                                                                "type": "string"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "provenance": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "origin_description": {
+                        "type": "object",
+                        "properties": {
+                            "harvest_date": {
+                                "type": "string"
+                            },
+                            "altered": {
+                                "type": "boolean"
+                            },
+                            "base_url": {
+                                "type": "string"
+                            },
+                            "identifier": {
+                                "type": "string"
+                            },
+                            "date_stamp": {
+                                "type": "string"
+                            },
+                            "metadata_namespace": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "tags": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "tag": {
+                        "type": "string"
+                    },
+                    "tag_group": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "lda_topics": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "model_info": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "source": {
+                                    "type": "string"
+                                },
+                                "author": {
+                                    "type": "string"
+                                },
+                                "version": {
+                                    "type": "string"
+                                },
+                                "model_id": {
+                                    "type": "string"
+                                },
+                                "nb_topics": {
+                                    "type": "number"
+                                },
+                                "description": {
+                                    "type": "string"
+                                },
+                                "corpus": {
+                                    "type": "string"
+                                },
+                                "uri": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "topic_description": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "topic_id": {
+                                    "type": "null"
+                                },
+                                "topic_score": {
+                                    "type": "null"
+                                },
+                                "topic_label": {
+                                    "type": "string"
+                                },
+                                "topic_words": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "word": {
+                                                "type": "string"
+                                            },
+                                            "word_weight": {
+                                                "type": "number"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "embeddings": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "date": {
+                        "type": "string"
+                    },
+                    "vector": {
+                        "type": "object",
+                        "properties": {}
+                    }
+                }
+            }
+        },
+        "additional": {
+            "type": "object",
+            "properties": {}
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "collection_code": {
+            "type": "string"
+        },
+        "collection_title": {
+            "type": "string"
+        },
+        "collection_description": {
+            "type": "string"
+        },
+        "is_internal": {
+            "type": "boolean"
+        }
+    }
+}

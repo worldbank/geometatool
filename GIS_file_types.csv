@@ -1,0 +1,87 @@
+﻿type,extension,format
+Vector,.SHP,Esri Shapefile
+Vector,.DBF,Esri Shapefile
+Vector,.SHX,Esri Shapefile
+Vector,.GEOJSON,Geographic JavaScript Object Notation
+Vector,.JSON,Geographic JavaScript Object Notation
+Vector,.GML,Geography Markup Language
+Vector,.KML,Google Keyhole Markup Language
+Vector,.KMZ,Google Keyhole Markup Language
+Vector,.GPX,GPS eXchange Format
+Vector,.VCT,IDRISI Vector
+Vector,.VDC,IDRISI Vector
+Vector,.TAB,MapInfo TAB
+Vector,.DAT,MapInfo TAB
+Vector,.ID,MapInfo TAB
+Vector,.MAP,MapInfo TAB
+Vector,.IND,MapInfo TAB
+Vector,.OSM,OpenStreetMap OSM XML
+Vector,.DLG,Digital Line Graph
+Raster,.IMG,ERDAS Imagine
+Raster,.ASC,American Standard Code for Information Interchange ASCII Grid
+Raster,.TIF,GeoTIFF
+Raster,.TIFF,GeoTIFF
+Raster,.OVR,GeoTIFF
+Raster,.RST,IDRISI Raster
+Raster,.RDC,IDRISI Raster
+Raster,.BIL,Envi RAW Raster
+Raster,.BIP,Envi RAW Raster
+Raster,.BSQ,Envi RAW Raster
+Raster,.PIX,PCI Geomatics Database File
+Compressed Raster,.ECW,ER Mapper Enhanced Compression Wavelet
+Compressed Raster,.JP2,Joint Photographic Experts Group JPEG2000
+Compressed Raster,.SID,LizardTech Multiresolution Seamless Image Database MrSID
+Compressed Raster,.SDW,LizardTech Multiresolution Seamless Image Database MrSID
+Geographic Database,.GDB,Esri File Geodatabase
+Geographic Database,.MDB,Esri Personal Geodatabase
+Geographic Database,.GPKG,OGC GeoPackage
+Geographic Database,.MBTILES,Mapbox MBTiles
+Geographic Database,.VMDS,GE Smallworld Version Managed Data Store
+Geographic Database,.SL3,SpatiaLite
+Geographic Database,.SQLITE,SpatiaLite
+LiDAR,.LAS,ASPRS LiDAR Data Exchange Format
+LiDAR,.LASD,ASPRS LiDAR Data Exchange Format
+LiDAR,.LAZ,ASPRS LiDAR Data Exchange Format
+LiDAR,.XYZ,Point Cloud XYZ
+CAD,.DWF,Autodesk Drawing
+CAD,.DWG,Autodesk Drawing
+CAD,.DXF,Autodesk Drawing
+CAD,.DGN,Bentley Microsystems DGN File Format
+Elevation,.DEM,"USGS DEM, Canadian CDED"
+Elevation,.DT0,Digital Terrain Elevation Data (DTED)
+Elevation,.DT1,Digital Terrain Elevation Data (DTED)
+Elevation,.DT2,Digital Terrain Elevation Data (DTED)
+Multitemporal,.NC,Network Common Data Form (NetCDF)
+Multitemporal,.HDF,Hierarchical Data Format
+Multitemporal,.GRIB,GRIdded Binary or General Regularly-distributed Information in Binary (GRIB)
+GIS Software Project,.MXD,Map Exchange Document
+GIS Software Project,.QGS,QGIS 2.X Project File
+GIS Software Project,.APRX,ArcGIS Pro Project File
+GIS Software Project,.QGZ,"QGIS 3 Project File	"
+GIS Software Project,.MXT,Map Exchange Document Template
+GIS Software Project,.WOR,MapInfo Workspace
+GIS Software Project,.MWS,MapInfo Workspace
+GIS Software Project,.3DD,Esri ArcGlobe Document
+GIS Software Project,.SXD,Esri ArcScene Document
+GIS Software Project,.MAP,IDRISI Map Composition File
+Cartographic File,.LYR,Esri ArcGIS Layer File
+Cartographic File,.LYRX,Esri ArcGIS Layer File
+Cartographic File,.QLR,QGIS Layer Definition File
+Cartographic File,.STYL,Esri ArcGIS Style File
+Cartographic File,.STYLX,Esri ArcGIS Style File
+3D,.DAE,COLLADA
+3D,.SKP,Trimble Sketchup
+Interchange File,.E00,Esri ArcInfo Export (Interchange)
+Interchange File,.E01,Esri ArcInfo Export (Interchange)
+Interchange File,.MIF,MapInfo Interchange File
+Interchange File,.MID,MapInfo Interchange File
+Interchange File,.MPK,Map Package
+Indoor Mapping,.IMDF,Indoor Mapping Data Format
+Indoor Mapping,.AVF,Apple Venue Format
+Indoor Mapping,.RVT,Revit BIM
+Indoor Mapping,.NWD,Revit BIM
+Indoor Mapping,.DWG,Revit BIM
+Other,.TBX,Esri ArcGIS Toolbox
+Other,.SDE,ArcSDE Connection File
+Other,.PDF,Adobe Geospatial PDF
+Other,.ECD,Esri Classifier Definition

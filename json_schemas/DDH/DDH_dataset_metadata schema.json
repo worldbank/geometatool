@@ -1,0 +1,611 @@
+{
+    "type": "object",
+    "properties": {
+        "Dataset": {
+            "type": "object",
+            "properties": {
+                "dataset_id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "dataset_unique_id": {
+                    "type": "string"
+                },
+                "archive_nid": {
+                    "type": "string"
+                },
+                "status": {
+                    "type": "string"
+                },
+                "first_published": {
+                    "type": "string"
+                },
+                "priority_tags": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "high_priority_tags": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "identification": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "title": {
+                            "type": "string"
+                        },
+                        "ddh_urltitle": {
+                            "type": "string"
+                        },
+                        "subtitle": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "acronym": {
+                            "type": "string"
+                        },
+                        "topics": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "is_delete": {
+                                        "type": "boolean"
+                                    }
+                                }
+                            }
+                        },
+                        "practice": {
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "work_unit": {
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "working_unit_vpu": {
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "wb_project_reference": {
+                            "type": "string"
+                        },
+                        "grant_number": {
+                            "type": "string"
+                        },
+                        "parent_dataset": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "collection_id": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "collection_id_new": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "translated_title": {
+                            "type": "string"
+                        },
+                        "point_of_contact": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "role": {
+                                        "type": "object",
+                                        "properties": {
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "code": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "email": {
+                                        "type": "string"
+                                    },
+                                    "upi": {
+                                        "type": "string"
+                                    },
+                                    "externally_visible_email": {
+                                        "type": "boolean"
+                                    },
+                                    "is_delete": {
+                                        "type": "boolean"
+                                    }
+                                }
+                            }
+                        },
+                        "language_supported": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "type": "string"
+                                    },
+                                    "code": {
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "is_delete": {
+                                        "type": "boolean"
+                                    }
+                                }
+                            }
+                        },
+                        "business_taxonomies": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "topical_taxonomies": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "citation": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "keywords": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "is_delete": {
+                                "type": "boolean"
+                            }
+                        }
+                    }
+                },
+                "constraints": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "legal": {
+                            "type": "object",
+                            "properties": {
+                                "access_constraints": {
+                                    "type": "string"
+                                },
+                                "use_constraints": {
+                                    "type": "string"
+                                },
+                                "other_constraints": {
+                                    "type": "string"
+                                },
+                                "disclaimer": {
+                                    "type": "string"
+                                },
+                                "copyright": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "security": {
+                            "type": "object",
+                            "properties": {
+                                "classification": {
+                                    "type": "string"
+                                },
+                                "exception": {
+                                    "type": "string"
+                                },
+                                "user_note": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "license": {
+                            "type": "object",
+                            "properties": {
+                                "license_id": {
+                                    "type": "string"
+                                },
+                                "custom_license_information": {
+                                    "type": "string"
+                                },
+                                "license_reference": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                },
+                "data_quality": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "data_notes": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "geographical_extent": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "coverage": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "type": "string"
+                                    },
+                                    "code": {
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "is_delete": {
+                                        "type": "boolean"
+                                    }
+                                }
+                            }
+                        },
+                        "geo_json": {
+                            "type": "string"
+                        },
+                        "bounding_box": {
+                            "type": "object",
+                            "properties": {
+                                "west_longitude": {
+                                    "type": "string"
+                                },
+                                "east_longitude": {
+                                    "type": "string"
+                                },
+                                "north_latitude": {
+                                    "type": "string"
+                                },
+                                "south_latitude": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "vertical_extent": {
+                            "type": "object",
+                            "properties": {
+                                "min_value": {
+                                    "type": "string"
+                                },
+                                "max_value": {
+                                    "type": "string"
+                                },
+                                "vertical_CRS": {
+                                    "type": "string"
+                                },
+                                "vertical_CRS_id": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                },
+                "temporal_extent": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "end_date": {
+                            "type": "string"
+                        },
+                        "start_date": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "duration": {
+                            "type": "string"
+                        },
+                        "coverage": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "temporal_resolution": {
+                    "type": "object",
+                    "properties": {
+                        "periodicity": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "spatial_resolution": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "granularity": {
+                            "type": "string"
+                        },
+                        "granularity_list": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "pixel_resolution": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "reference_system": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "reference_id": {
+                            "type": "string"
+                        },
+                        "version": {
+                            "type": "string"
+                        },
+                        "map_projection": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "lineage": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "sourceType": {
+                            "type": "string"
+                        },
+                        "source_type_list": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "is_delete": {
+                                        "type": "boolean"
+                                    }
+                                }
+                            }
+                        },
+                        "source": {
+                            "type": "string"
+                        },
+                        "source_reference": {
+                            "type": "string"
+                        },
+                        "statistical_concept_and_methodology": {
+                            "type": "string"
+                        },
+                        "base_period": {
+                            "type": "string"
+                        },
+                        "aggregation_method": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "related_links_and_publications": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "publication_place": {
+                            "type": "string"
+                        },
+                        "funding_name_abbreviation_role": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "study_type": {
+                            "type": "string"
+                        },
+                        "deviations_from_sample_design": {
+                            "type": "string"
+                        },
+                        "other_acknowledgements": {
+                            "type": "string"
+                        },
+                        "harvest_system": {
+                            "type": "string"
+                        },
+                        "harvest_system_reference": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "maintenance_information": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "update_frequency": {
+                            "type": "string"
+                        },
+                        "update_schedule": {
+                            "type": "string"
+                        },
+                        "maintenance_note": {
+                            "type": "string"
+                        },
+                        "embargo_date": {
+                            "type": "string"
+                        },
+                        "embargo_comments": {
+                            "type": "string"
+                        },
+                        "version_description": {
+                            "type": "string"
+                        },
+                        "version_production_date": {
+                            "type": "string"
+                        },
+                        "version_notes": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "subscription": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "subscription_date_from": {
+                            "type": "string"
+                        },
+                        "subscription_date_to": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "last_updated_date": {
+                    "type": "string"
+                },
+                "resources": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "resource_id": {
+                                "type": "string"
+                            },
+                            "resource_unique _id": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "resource_type": {
+                                "type": "string"
+                            },
+                            "description": {
+                                "type": "string"
+                            },
+                            "url": {
+                                "type": "string"
+                            },
+                            "format": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "indicators": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "string"
+                            },
+                            "title": {
+                                "type": "string"
+                            },
+                            "description": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1148 @@
+{
+    "description": {
+        "language": "eng",
+        "characterSet": {
+            "codeList": "http://standards.iso.org/19115/-3/lan/1.0/codelists.xml#MD_CharacterSetCode",
+            "codeListValue": "UTF-8"
+        },
+        "hierarchyLevel": [
+            "dataset"
+        ],
+        "contact": [
+            {
+                "role": "author",
+                "organisationName": "No name",
+                "individualName": "No name"
+            }
+        ],
+        "identificationInfo": [
+            {
+                "citation": {
+                    "date": [
+                        {
+                            "date": "2021-03-24",
+                            "type": "creation"
+                        }
+                    ],
+                    "title": "International Poverty Line - Subnational Poverty"
+                },
+                "abstract": "This file was automatically generated and has no abstract.",
+                "extent": {
+                    "geographicElement": [
+                        {
+                            "geographicBoundingBox": {
+                                "westBoundLongitude": -179.99999999990004,
+                                "eastBoundLongitude": -55.979496,
+                                "southBoundLatitude": 179.9999885411868,
+                                "northBoundLatitude": 83.62741851825007
+                            }
+                        }
+                    ]
+                },
+                "resourceFormat": [
+                    {
+                        "name": "Esri Shapefile"
+                    }
+                ]
+            }
+        ],
+        "spatialRepresentationInfo": [
+            {
+                "vectorSpatialRepresentation": {
+                    "geometricObjects": [
+                        {
+                            "geometricObjectType": "MD_GeometricObjectTypeCode_surface",
+                            "geometricObjectCount": 1373
+                        },
+                        {
+                            "geometricObjectType": "MD_GeometricObjectTypeCode_complex",
+                            "geometricObjectCount": 790
+                        }
+                    ]
+                }
+            }
+        ],
+        "referenceSystemInfo": [
+            {
+                "code": "4326",
+                "codeSpace": "EPSG"
+            }
+        ],
+        "distributionInfo": {
+            "distributionFormat": [
+                {
+                    "name": "Esri Shapefile",
+                    "specification": "Offline File."
+                }
+            ],
+            "transferOptions": {
+                "onLine": [
+                    {
+                        "title": "International Poverty Line - Subnational Poverty.shp"
+                    }
+                ]
+            }
+        },
+        "feature_catalogue": {
+            "name": "International Poverty Line - Subnational Poverty",
+            "scope": [
+                "International Poverty Line - Subnational Poverty"
+            ],
+            "versionNumber": "v",
+            "versionDate": {
+                "date": "2021-03-24"
+            },
+            "featureType": [
+                {
+                    "typeName": "International Poverty Line - Subnational Poverty",
+                    "definition": "International Poverty Line - Subnational Poverty",
+                    "isAbstract": false,
+                    "carrierOfCharacteristics": [
+                        {
+                            "memberName": "geo_code2",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "FSM_2013_GADM1_FSM_FSM.4_1"
+                                },
+                                {
+                                    "label": "FSM_2013_GADM1_FSM_FSM.1_1"
+                                },
+                                {
+                                    "label": "FSM_2013_GADM1_FSM_FSM.3_1"
+                                },
+                                {
+                                    "label": "FSM_2013_GADM1_FSM_FSM.2_1"
+                                },
+                                {
+                                    "label": "TWN_2016_GADM2_TWN_TWN.6_1_TWN.6.1_1"
+                                },
+                                {
+                                    "label": "TWN_2016_GADM2_TWN_TWN.7_1_TWN.7.3_1"
+                                },
+                                {
+                                    "label": "TWN_2016_GADM2_TWN_TWN.7_1_TWN.7.11_1"
+                                },
+                                {
+                                    "label": "TWN_2016_GADM2_TWN_TWN.7_1_TWN.7.12_1"
+                                },
+                                {
+                                    "label": "TWN_2016_GADM2_TWN_TWN.7_1_TWN.7.6_1"
+                                },
+                                {
+                                    "label": "TWN_2016_GADM2_TWN_TWN.7_1_TWN.7.10_1"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "region",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "EAP"
+                                },
+                                {
+                                    "label": "LAC"
+                                },
+                                {
+                                    "label": "ECA"
+                                },
+                                {
+                                    "label": "MNA"
+                                },
+                                {
+                                    "label": "OHI"
+                                },
+                                {
+                                    "label": "SAR"
+                                },
+                                {
+                                    "label": "SSA"
+                                },
+                                {
+                                    "label": "NAC"
+                                },
+                                {
+                                    "label": "MENA"
+                                },
+                                {
+                                    "label": "nan"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "code",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "FSM"
+                                },
+                                {
+                                    "label": "TWN"
+                                },
+                                {
+                                    "label": "WSM"
+                                },
+                                {
+                                    "label": "AUS"
+                                },
+                                {
+                                    "label": "IDN"
+                                },
+                                {
+                                    "label": "JPN"
+                                },
+                                {
+                                    "label": "MMR"
+                                },
+                                {
+                                    "label": "MNG"
+                                },
+                                {
+                                    "label": "MYS"
+                                },
+                                {
+                                    "label": "PNG"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "baseyear",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "2013"
+                                },
+                                {
+                                    "label": "2016"
+                                },
+                                {
+                                    "label": "2008"
+                                },
+                                {
+                                    "label": "2014"
+                                },
+                                {
+                                    "label": "2018"
+                                },
+                                {
+                                    "label": "2015"
+                                },
+                                {
+                                    "label": "2009"
+                                },
+                                {
+                                    "label": "1999"
+                                },
+                                {
+                                    "label": "2017"
+                                },
+                                {
+                                    "label": "2004"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "lineupyear",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "2018"
+                                },
+                                {
+                                    "label": "2015"
+                                },
+                                {
+                                    "label": "nan"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "survname",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "HIES"
+                                },
+                                {
+                                    "label": "LIS"
+                                },
+                                {
+                                    "label": "SUSENAS"
+                                },
+                                {
+                                    "label": "MPLCS"
+                                },
+                                {
+                                    "label": "HSES"
+                                },
+                                {
+                                    "label": "HIS"
+                                },
+                                {
+                                    "label": "SES"
+                                },
+                                {
+                                    "label": "TLSLS"
+                                },
+                                {
+                                    "label": "LFS"
+                                },
+                                {
+                                    "label": "CASEN"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "welfaretyp",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "CONS"
+                                },
+                                {
+                                    "label": "INC"
+                                },
+                                {
+                                    "label": "EXP"
+                                },
+                                {
+                                    "label": "CONS-EXP"
+                                },
+                                {
+                                    "label": "nan"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "level",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "subnatid1"
+                                },
+                                {
+                                    "label": "region_c"
+                                },
+                                {
+                                    "label": "subnatid"
+                                },
+                                {
+                                    "label": "subnatid2"
+                                },
+                                {
+                                    "label": "national"
+                                },
+                                {
+                                    "label": "reigon_c"
+                                },
+                                {
+                                    "label": "gaul_adm1_str"
+                                },
+                                {
+                                    "label": "prov_s"
+                                },
+                                {
+                                    "label": "subnatid0"
+                                },
+                                {
+                                    "label": "subnatid3"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "sample",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "1\ufffdYap"
+                                },
+                                {
+                                    "label": "2\ufffdChuuk"
+                                },
+                                {
+                                    "label": "3\ufffdPohnpei"
+                                },
+                                {
+                                    "label": "4\ufffdKosrae"
+                                },
+                                {
+                                    "label": "[1]Taipei city"
+                                },
+                                {
+                                    "label": "[10]Chiayi county"
+                                },
+                                {
+                                    "label": "[13]Pingtung county"
+                                },
+                                {
+                                    "label": "[14]Taitung county"
+                                },
+                                {
+                                    "label": "[15]Hualien county"
+                                },
+                                {
+                                    "label": "[16]Penghu county"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "GSAP2_regi",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "EAP"
+                                },
+                                {
+                                    "label": "LAC"
+                                },
+                                {
+                                    "label": "ECA"
+                                },
+                                {
+                                    "label": "nan"
+                                },
+                                {
+                                    "label": "MNA"
+                                },
+                                {
+                                    "label": "OHI"
+                                },
+                                {
+                                    "label": "SAR"
+                                },
+                                {
+                                    "label": "SSA"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "GSAP2_code",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "FSM"
+                                },
+                                {
+                                    "label": "TWN"
+                                },
+                                {
+                                    "label": "WSM"
+                                },
+                                {
+                                    "label": "AUS"
+                                },
+                                {
+                                    "label": "IDN"
+                                },
+                                {
+                                    "label": "JPN"
+                                },
+                                {
+                                    "label": "MMR"
+                                },
+                                {
+                                    "label": "MNG"
+                                },
+                                {
+                                    "label": "MYS"
+                                },
+                                {
+                                    "label": "PNG"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "GSAP2_base",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "2013"
+                                },
+                                {
+                                    "label": "2016"
+                                },
+                                {
+                                    "label": "2008"
+                                },
+                                {
+                                    "label": "2014"
+                                },
+                                {
+                                    "label": "2018"
+                                },
+                                {
+                                    "label": "2015"
+                                },
+                                {
+                                    "label": "2009"
+                                },
+                                {
+                                    "label": "1999"
+                                },
+                                {
+                                    "label": "2017"
+                                },
+                                {
+                                    "label": "2004"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "GSAP2_line",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "2018"
+                                },
+                                {
+                                    "label": "nan"
+                                },
+                                {
+                                    "label": "2015"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "GSAP2_surv",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "HIES"
+                                },
+                                {
+                                    "label": "LIS"
+                                },
+                                {
+                                    "label": "SUSENAS"
+                                },
+                                {
+                                    "label": "MPLCS"
+                                },
+                                {
+                                    "label": "HSES"
+                                },
+                                {
+                                    "label": "HIS"
+                                },
+                                {
+                                    "label": "SES"
+                                },
+                                {
+                                    "label": "TLSLS"
+                                },
+                                {
+                                    "label": "LFS"
+                                },
+                                {
+                                    "label": "CASEN"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "GSAP2_welf",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "nan"
+                                },
+                                {
+                                    "label": "INC"
+                                },
+                                {
+                                    "label": "CONS"
+                                },
+                                {
+                                    "label": "EXP"
+                                },
+                                {
+                                    "label": "CONS-EXP"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "GSAP2_leve",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "subnatid1"
+                                },
+                                {
+                                    "label": "region_c"
+                                },
+                                {
+                                    "label": "subnatid"
+                                },
+                                {
+                                    "label": "subnatid2"
+                                },
+                                {
+                                    "label": "national"
+                                },
+                                {
+                                    "label": "nan"
+                                },
+                                {
+                                    "label": "reigon_c"
+                                },
+                                {
+                                    "label": "gaul_adm1_str"
+                                },
+                                {
+                                    "label": "prov_s"
+                                },
+                                {
+                                    "label": "subnatid0"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "GSAP2_samp",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "1-Yap"
+                                },
+                                {
+                                    "label": "2-Chuuk"
+                                },
+                                {
+                                    "label": "3-Pohnpei"
+                                },
+                                {
+                                    "label": "4-Kosrae"
+                                },
+                                {
+                                    "label": "[1]Taipei city"
+                                },
+                                {
+                                    "label": "[10]Chiayi county"
+                                },
+                                {
+                                    "label": "[13]Pingtung county"
+                                },
+                                {
+                                    "label": "[14]Taitung county"
+                                },
+                                {
+                                    "label": "[15]Hualien county"
+                                },
+                                {
+                                    "label": "[16]Penghu county"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "GSAP2_poor",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "16.16"
+                                },
+                                {
+                                    "label": "18.68"
+                                },
+                                {
+                                    "label": "13.10"
+                                },
+                                {
+                                    "label": "2.10"
+                                },
+                                {
+                                    "label": "0.00"
+                                },
+                                {
+                                    "label": "0.05"
+                                },
+                                {
+                                    "label": "0.70"
+                                },
+                                {
+                                    "label": "0.51"
+                                },
+                                {
+                                    "label": "0.57"
+                                },
+                                {
+                                    "label": "0.48"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "GSAP2_po_1",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "38.26"
+                                },
+                                {
+                                    "label": "42.95"
+                                },
+                                {
+                                    "label": "36.00"
+                                },
+                                {
+                                    "label": "23.81"
+                                },
+                                {
+                                    "label": "0.00"
+                                },
+                                {
+                                    "label": "0.27"
+                                },
+                                {
+                                    "label": "0.05"
+                                },
+                                {
+                                    "label": "7.41"
+                                },
+                                {
+                                    "label": "7.64"
+                                },
+                                {
+                                    "label": "0.67"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "GSAP2_po_2",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "63.83"
+                                },
+                                {
+                                    "label": "73.12"
+                                },
+                                {
+                                    "label": "67.07"
+                                },
+                                {
+                                    "label": "58.57"
+                                },
+                                {
+                                    "label": "0.00"
+                                },
+                                {
+                                    "label": "0.27"
+                                },
+                                {
+                                    "label": "0.20"
+                                },
+                                {
+                                    "label": "0.12"
+                                },
+                                {
+                                    "label": "0.11"
+                                },
+                                {
+                                    "label": "0.05"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "GSAP2_npoo",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "2130"
+                                },
+                                {
+                                    "label": "9950"
+                                },
+                                {
+                                    "label": "5223"
+                                },
+                                {
+                                    "label": "132"
+                                },
+                                {
+                                    "label": "0"
+                                },
+                                {
+                                    "label": "1445"
+                                },
+                                {
+                                    "label": "327"
+                                },
+                                {
+                                    "label": "759"
+                                },
+                                {
+                                    "label": "40839"
+                                },
+                                {
+                                    "label": "28604"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "GSAP2_np_1",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "5046"
+                                },
+                                {
+                                    "label": "22877"
+                                },
+                                {
+                                    "label": "14353"
+                                },
+                                {
+                                    "label": "1504"
+                                },
+                                {
+                                    "label": "0"
+                                },
+                                {
+                                    "label": "721"
+                                },
+                                {
+                                    "label": "1445"
+                                },
+                                {
+                                    "label": "3448"
+                                },
+                                {
+                                    "label": "11427"
+                                },
+                                {
+                                    "label": "48468"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "GSAP2_np_2",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "8417"
+                                },
+                                {
+                                    "label": "38949"
+                                },
+                                {
+                                    "label": "26741"
+                                },
+                                {
+                                    "label": "3701"
+                                },
+                                {
+                                    "label": "0"
+                                },
+                                {
+                                    "label": "721"
+                                },
+                                {
+                                    "label": "181"
+                                },
+                                {
+                                    "label": "2267"
+                                },
+                                {
+                                    "label": "3408"
+                                },
+                                {
+                                    "label": "1888"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "GSAP2_po_3",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "0.3847581"
+                                },
+                                {
+                                    "label": "0.4399542"
+                                },
+                                {
+                                    "label": "0.3739918"
+                                },
+                                {
+                                    "label": "0.2571429"
+                                },
+                                {
+                                    "label": "nan"
+                                },
+                                {
+                                    "label": "0.4077329"
+                                },
+                                {
+                                    "label": "0.3975598"
+                                },
+                                {
+                                    "label": "0.400749"
+                                },
+                                {
+                                    "label": "0.3852535"
+                                },
+                                {
+                                    "label": "0.281744"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "GSAP2_medi",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "4.113258"
+                                },
+                                {
+                                    "label": "3.603581"
+                                },
+                                {
+                                    "label": "4.01455"
+                                },
+                                {
+                                    "label": "4.917893"
+                                },
+                                {
+                                    "label": "nan"
+                                },
+                                {
+                                    "label": "6.972652"
+                                },
+                                {
+                                    "label": "6.838753"
+                                },
+                                {
+                                    "label": "5.0472789"
+                                },
+                                {
+                                    "label": "5.0670996"
+                                },
+                                {
+                                    "label": "5.8252313"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "GSAP2_mean",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "5.450735"
+                                },
+                                {
+                                    "label": "4.649663"
+                                },
+                                {
+                                    "label": "5.281188"
+                                },
+                                {
+                                    "label": "6.70903"
+                                },
+                                {
+                                    "label": "63.152370"
+                                },
+                                {
+                                    "label": "37.711715"
+                                },
+                                {
+                                    "label": "39.440287"
+                                },
+                                {
+                                    "label": "43.623330"
+                                },
+                                {
+                                    "label": "45.652033"
+                                },
+                                {
+                                    "label": "47.823724"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "GSAP2_gini",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "0.40287871"
+                                },
+                                {
+                                    "label": "0.40623805"
+                                },
+                                {
+                                    "label": "0.38684373"
+                                },
+                                {
+                                    "label": "0.38587457"
+                                },
+                                {
+                                    "label": "nan"
+                                },
+                                {
+                                    "label": "0.42217996"
+                                },
+                                {
+                                    "label": "0.41977656"
+                                },
+                                {
+                                    "label": "0.3124283"
+                                },
+                                {
+                                    "label": "0.30897455"
+                                },
+                                {
+                                    "label": "0.31074351"
+                                }
+                            ]
+                        },
+                        {
+                            "memberName": "GSAP2_thei",
+                            "cardinality": {
+                                "lower": 1,
+                                "upper": 1
+                            },
+                            "valueType": "object",
+                            "listedValue": [
+                                {
+                                    "label": "0.27766612"
+                                },
+                                {
+                                    "label": "0.29622537"
+                                },
+                                {
+                                    "label": "0.29407197"
+                                },
+                                {
+                                    "label": "0.2761113"
+                                },
+                                {
+                                    "label": "nan"
+                                },
+                                {
+                                    "label": "0.3683308"
+                                },
+                                {
+                                    "label": "0.33588888"
+                                },
+                                {
+                                    "label": "0.17105687"
+                                },
+                                {
+                                    "label": "0.17104034"
+                                },
+                                {
+                                    "label": "0.17938278"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

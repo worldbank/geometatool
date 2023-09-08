@@ -1,0 +1,128 @@
+{
+    "Resource": {
+        "resource_id": "string",
+        "resource_unique_id": "string",
+        "archive_nid": "string",
+        "dataset_id": "string",
+        "last_updated_date": "string",
+        "first_published_date": "string",
+        "identification": {
+            "id": "string",
+            "title": "string",
+            "type": "string",
+            "description": "string",
+            "status": "string",
+            "work_unit": {
+                "code": "string",
+                "name": "string"
+            },
+            "citation": "string",
+            "keywords": [
+                {
+                    "id": "string",
+                    "name": "string"
+                }
+            ],
+            "language_supported": [
+                {
+                    "id": "string",
+                    "code": "string",
+                    "name": "string",
+                    "is_delete": true
+                }
+            ],
+            "sort_order": 0
+        },
+        "constraints": {
+            "id": "string",
+            "legal": {
+                "access_constraints": "string",
+                "use_constraints": "string",
+                "other_constraints": "string",
+                "disclaimer": "string",
+                "copyright": "string"
+            },
+            "security": {
+                "classification": "string",
+                "exception": "string",
+                "user_note": "string"
+            },
+            "license": {
+                "license_id": "string",
+                "custom_license_information": "string",
+                "license_reference": "string",
+                "exception": "string"
+            }
+        },
+        "distribution": {
+            "id": "string",
+            "format": "string",
+            "url": "string",
+            "ext_url": "string",
+            "website_url": "string",
+            "distribution_description": "string",
+            "distribution_format": "string",
+            "distribution_size": "string",
+            "is_directory": true,
+            "is_large_dataset": true,
+            "file_name": "string"
+        },
+        "geographical_extent": {
+            "id": "string",
+            "description": "string",
+            "coverage": [
+                {
+                    "id": "string",
+                    "code": "string",
+                    "name": "string",
+                    "is_delete": true
+                }
+            ],
+            "geo_json": "string",
+            "bounding_box": {
+                "west_longitude": "string",
+                "east_longitude": "string",
+                "north_latitude": "string",
+                "south_latitude": "string"
+            }
+        },
+        "lineage": {
+            "id": "string",
+            "harvest_system": "string",
+            "harvest_system_reference": "string"
+        },
+        "maintenance_information": {
+            "id": "string",
+            "update_frequency": "string",
+            "maintenance_note": "string",
+            "version": "string",
+            "version_date": "string",
+            "version_description": "string",
+            "version_notes": "string"
+        },
+        "reference_system": {
+            "id": "string",
+            "reference_id": "string",
+            "version": "string",
+            "map_projection": "string"
+        },
+        "spatial_resolution": {
+            "id": "string",
+            "granularity": "string",
+            "pixel_resolution": "string"
+        },
+        "temporal_extent": {
+            "id": "string",
+            "end_date": "string",
+            "start_date": "string",
+            "description": "string",
+            "duration": "string",
+            "coverage": [
+                "string"
+            ]
+        },
+        "temporal_resolution": {
+            "periodicity": "string"
+        }
+    }
+}
