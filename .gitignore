@@ -60,4 +60,6 @@ target/
 /old_files
 /environment setup.txt
 /data
-/examples/example1/data/International Poverty Line - Subnational Poverty.shp
+
+# Big data files
+*.shp
