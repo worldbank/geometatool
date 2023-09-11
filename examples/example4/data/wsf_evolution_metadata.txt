@@ -1,0 +1,9 @@
+1. WSFevolution - outlining the settlement extent growth from 1985 to 2015 on a yearly basis. Pixel values range between 1985 and 2015 corresponding to the estimated year of settlement detection, whereas 0 is no data.
+
+2. WSFevolution_RGB - the RGB version of the WSFevolution layer colored according to the "official" product palette.
+
+3. WSFevolution_IDCscore - this actually requires a bit of explanation but is rather important. While generating the WSF evolution-as you might remember-we employed Landsat-based temporal statistics which proved generally robust if computed over at least 7 clear observations (i.e., no clouds / cloud shadows). If less than 7 clear observations are available for the target year, the time frame is enlarged backwards (at 1-year steps) as long as the condition is met. Of course, in the case of poor Landsat data availability the time frame might get rather large, which can lead to a lower quality of the product (and of course this does not depend on our methodology). Accordingly, to provide the user with a suitable and intuitive measure to account for this, we conceived the Input Data Consistency (IDC) Score ranging from 1 to 6 with: 1) very good; 2) good; 3) fair; 4)moderate; 5) low; 6) very low.
+
+4. WSF2019_imperviousness_v1_10m - a 10m resolution layer derived from Sentinel-2 multitemporal imagery where each pixel marked as settlement in the WSF2019 is associated with the corresponding estimated percent impervious surface (values are reported as integer between 1 and 100). 
+
+5. WSF2019_imperviousness_v1_RGB_10m -a 10m resolution RGB version of the WSF2019 imperviousness layer above, colored according to the corresponding palette attached.

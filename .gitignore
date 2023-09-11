@@ -63,3 +63,7 @@ target/
 
 # Big data files
 *.shp
+*.zip
+*.dbf
+*.tif
+*.tiff
