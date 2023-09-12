@@ -2,6 +2,7 @@ import os
 import rasterio
 import logging
 import utils
+import numpy as np
 
 #Set up logging
 log = logging.getLogger(__name__)
@@ -73,8 +74,8 @@ def read_profiles(file_path):
         profiles['maxValues'] = []
         profiles['minValues'] = []
         for band_idx in range(ras_content.count):
-            profiles['maxValues'].append(ras_content.read(band_idx+1).max())
-            profiles['minValues'].append(ras_content.read(band_idx+1).min())
+            profiles['maxValues'].append(np.nanmax(ras_content.read(band_idx+1)))
+            profiles['minValues'].append(np.nanmin(ras_content.read(band_idx+1)))
         
         # Get noData value
         profiles['noDataValue'] = str(ras_content.nodata)
