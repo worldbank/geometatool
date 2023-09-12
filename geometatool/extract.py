@@ -114,7 +114,7 @@ def extract_metadata(input_file_path, default_values=[]):
             iso_metadata.referenceSystemInfo(profiles['EPSG'], profiles['referenceSystemTypeCode'])
         iso_metadata.identificationInfo(file_name, abstract, progressCode, None, profiles['BBOX'], timePeriod, file_format, keywords, classificationCode, useLimitations)
         if featureTypeList:
-            iso_metadata.contentInfo(profiles['layerName'], [profiles['layerName']], "v", file_date, languageCode, organisationName, individualName, roleCode, featureTypeList)
+            iso_metadata.featureCatalogue(profiles['layerName'], [profiles['layerName']], "v", file_date, languageCode, organisationName, individualName, roleCode, featureTypeList)
         iso_metadata.distributionInfo('Offline File.', file_name_with_extension)
         
 
@@ -124,6 +124,39 @@ def extract_metadata(input_file_path, default_values=[]):
     ###############
     elif file_type == 'Raster':
         profiles = raster_data.read_profiles(input_file_path)
+        
+        # set contentTypeCode
+        contentTypeCode = 'image'
+
+        # set gridSpatialRepresentation
+        gridSpatialRepresentation = {}
+        gridSpatialRepresentation['numberOfDimensions'] = profiles['numberOfDimensions']
+        axisDimensionProperties = {}
+        axisDimensionProperties['rowSize'] = profiles['height']
+        axisDimensionProperties['columnSize'] = profiles['width']
+        axisDimensionProperties['rowResolution'] = abs(profiles['transform'][4])
+        axisDimensionProperties['columnResolution'] = abs(profiles['transform'][0])
+        axisDimensionProperties['resolutionUnit'] = profiles['unit']
+
+        gridSpatialRepresentation['axisDimensionProperties'] = axisDimensionProperties
+        gridSpatialRepresentation['cellGeometryCode'] = "area"
+        gridSpatialRepresentation['transformationParameterAvailability'] = "true"
+
+        # add elements
+        iso_metadata.metadataIdentifier(str(uuid.uuid1()))   
+        if languageCode and characterSetCode:
+            iso_metadata.defaultLocale(languageCode, characterSetCode)
+        if resourceScope:
+            iso_metadata.metadataScope(resourceScope)
+        iso_metadata.contact(organisationName, individualName, roleCode)
+        iso_metadata.dateInfo(file_date, 'creation')
+        if gridSpatialRepresentation:
+            iso_metadata.spatialRepresentationInfo(None, gridSpatialRepresentation)
+        if profiles['EPSG']:
+            iso_metadata.referenceSystemInfo(profiles['EPSG'], profiles['referenceSystemTypeCode'])
+        iso_metadata.identificationInfo(file_name, abstract, progressCode, None, profiles['BBOX'], timePeriod, file_format, keywords, classificationCode, useLimitations)
+        iso_metadata.coverageDescription(contentTypeCode, profiles['numberOfBands'], profiles['maxValues'], profiles['minValues'], profiles['noDataValue'])
+        iso_metadata.distributionInfo('Offline File.', file_name_with_extension)
     
 
     ################

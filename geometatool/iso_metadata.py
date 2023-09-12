@@ -83,6 +83,7 @@ codelist_MD_ClassificationCode = 'http://standards.iso.org/iso/19115/resources/C
 codelist_MD_TopologyLevelCode = 'http://standards.iso.org/iso/19115/resources/Codelist/cat/codelists.xml#MD_TopologyLevelCode'
 codelist_MD_GeometricObjectTypeCode = 'http://standards.iso.org/iso/19115/resources/Codelist/cat/codelists.xml#MD_GeometricObjectTypeCode'
 codelist_DS_AssociationTypeCode = 'http://standards.iso.org/iso/19115/resources/Codelist/cat/codelists.xml#DS_AssociationTypeCode'
+codelist_MD_CoverageContentTypeCode = 'http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CoverageContentTypeCode'
 
 class ISO_Metadata:
     '''Class to create ISO19115-3 Metadata Entries.'''
@@ -337,7 +338,7 @@ class ISO_Metadata:
                 d = ET.SubElement(b, '{'+ msr +'}geometricObjects')
                 e = ET.SubElement(d, '{'+ msr +'}MD_GeometricObjects')
                 f = ET.SubElement(e, '{'+ msr +'}geometricObjectType')
-                ET.SubElement(f, '{'+ msr +'}MD_GeometricObjectTypeCode', codeList=codelist_MD_GeometricObjectTypeCode, codeListValue="MD_GeometricObjectTypeCode_" + geometricObjects['objectType'])
+                ET.SubElement(f, '{'+ msr +'}MD_GeometricObjectTypeCode', codeList=codelist_MD_GeometricObjectTypeCode, codeListValue=geometricObjects['objectType'])
                 g = ET.SubElement(e, '{'+ msr +'}geometricObjectCount')
                 h = ET.SubElement(g, '{'+ gco +'}Integer')
                 h.text = str(geometricObjects['count'])
@@ -345,13 +346,15 @@ class ISO_Metadata:
         if gridSpatialRepresentation:
             b = ET.SubElement(a, '{'+ msr +'}MD_GridSpatialRepresentation')
             c = ET.SubElement(b, '{'+ msr +'}numberOfDimensions')
-            d = ET.SubElement(e, '{'+ gco +'}Integer')
-            d.text = gridSpatialRepresentation['numberOfDimensions']
+            d = ET.SubElement(c, '{'+ gco +'}Integer')
+            d.text = str(gridSpatialRepresentation['numberOfDimensions'])
             e = ET.SubElement(b, '{'+ msr +'}cellGeometry')
             f = ET.SubElement(b, '{'+ msr +'}transformationParameterAvailability')
+            g = ET.SubElement(f, '{'+ gco +'}Boolean')
+            g.text = 'true'
 
     
-    def contentInfo(self, featureCatalogueName, featureCatalogueScopes, versionNumber, versionDate, languageCode, organisationName, individualName, roleCode, featureTypeList):
+    def featureCatalogue(self, featureCatalogueName, featureCatalogueScopes, versionNumber, versionDate, languageCode, organisationName, individualName, roleCode, featureTypeList):
         a = ET.SubElement(self.root, '{'+ mdb +'}contentInfo')
         b = ET.SubElement(a, '{'+ mrc +'}MD_FeatureCatalogue')
         c = ET.SubElement(b, '{'+ mrc +'}featureCatalogue') 
@@ -428,5 +431,45 @@ class ISO_Metadata:
                     x = ET.SubElement(w, '{'+ gco +'}CharacterString')
                     x.text = str(listedValue)
 
-            y = ET.SubElement(g, '{'+ gfc +'}featureCatalogue')
+
+    def coverageDescription(self, contentTypeCode, numberOfBands, maxValues, minValues, noDataValue):
+        a = ET.SubElement(self.root, '{'+ mdb +'}contentInfo')
+        b = ET.SubElement(a, '{'+ mrc +'}MI_CoverageDescription')
+        c = ET.SubElement(b, '{'+ mrc +'}attributeDescription')
+        d = ET.SubElement(c, '{'+ gco +'}RecordType')
+        d.text = "Grid Cell"
+
+        e = ET.SubElement(b, '{'+ mrc +'}attributeGroup')
+        f = ET.SubElement(e, '{'+ mrc +'}MD_AttributeGroup')
+        g = ET.SubElement(f, '{'+ mrc +'}contentType')
+        ET.SubElement(g, '{'+ mrc +'}MD_CoverageContentTypeCode', codeList=codelist_MD_CoverageContentTypeCode, codeListValue=contentTypeCode)
+
+        h = ET.SubElement(f, '{'+ mrc +'}attribute')
+        for band_idx in range(numberOfBands):
+            i = ET.SubElement(h, '{'+ mrc +'}MD_Band')
+            j = ET.SubElement(i, '{'+ mrc +'}descriptor')
+            k = ET.SubElement(j, '{'+ gco +'}CharacterString')
+            k.text = 'Band_' + str(band_idx+1)
+            l = ET.SubElement(i, '{'+ mrc +'}boundMax')
+            m = ET.SubElement(l, '{'+ gco +'}Real')
+            m.text = str(maxValues[band_idx])
+            n = ET.SubElement(i, '{'+ mrc +'}boundMin')
+            o = ET.SubElement(n, '{'+ gco +'}Real')
+            o.text = str(minValues[band_idx])
+
+        p = ET.SubElement(b, '{'+ mrc +'}rangeElementDescription')
+        q = ET.SubElement(p, '{'+ mrc +'}MI_RangeElementDescription')
+        r = ET.SubElement(q, '{'+ mrc +'}name')
+        s = ET.SubElement(r, '{'+ gco +'}CharacterString')
+        s.text = "Empty Grid Cell"
+        t = ET.SubElement(q, '{'+ mrc +'}definition')
+        u = ET.SubElement(t, '{'+ gco +'}CharacterString')
+        u.text = "Representation of grid cell with no measurement value"
+        v = ET.SubElement(q, '{'+ mrc +'}rangeElement')
+        w = ET.SubElement(v, '{'+ gco +'}Record')
+        x = ET.SubElement(w, '{'+ gco +'}CharacterString')
+        x.text = str(noDataValue)
+
+
+
 

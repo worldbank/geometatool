@@ -6,7 +6,7 @@ import utils
 #Set up logging
 log = logging.getLogger(__name__)
 
-def read_profiles(file_path, extension):
+def read_profiles(file_path):
     """ 
     read profiles of raster data 
         
@@ -59,6 +59,25 @@ def read_profiles(file_path, extension):
 
         # Get height
         profiles['height'] = ras_content.height
+
+        # Get unit
+        if ras_content.crs.is_geographic:
+            profiles['unit'] = "decimalDegrees"
+        else:
+            profiles['unit'] = ras_content.crs.linear_units
+
+        # Get numberOfBands
+        profiles['numberOfBands'] = ras_content.count
+        
+        # Get min/max values
+        profiles['maxValues'] = []
+        profiles['minValues'] = []
+        for band_idx in range(ras_content.count):
+            profiles['maxValues'].append(ras_content.read(band_idx+1).max())
+            profiles['minValues'].append(ras_content.read(band_idx+1).min())
+        
+        # Get noData value
+        profiles['noDataValue'] = str(ras_content.nodata)
 
         # Get affine transform
         profiles['transform'] = ras_content.transform
