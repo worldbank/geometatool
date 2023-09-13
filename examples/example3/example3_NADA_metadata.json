@@ -1,0 +1,67 @@
+{
+    "description": {
+        "language": "en",
+        "hierarchyLevel": [
+            "dataset"
+        ],
+        "identificationInfo": [
+            {
+                "citation": {
+                    "title": "Building Stock and Typology of Kigali, Rwanda"
+                },
+                "abstract": "This is a supplementary file provided for the data descriptor submitted to the MDPI journal \"data\" by Bachofer et al. 2019. The title of the dataset is \"Building Stock and Typology of Kigali, Rwanda\". The dataset is published under the CC-BY licence.\n\nData on urban morphology are an important element for various planning purposes and satellite remote sensing is capable of providing this type of data. The proposed study uses very high-resolution Pl\u00e9iades imagery for the densely built-up central part of the City of Kigali for the year 2015 in order to derive data on building footprints and building archetypes. Aerial images of the study area from 2008-2009 were used in combination with the 2015 dataset to create a change monitoring dataset on a single building basis. A semi-automated approach was chosen with an object based image analysis combined with an expert-based revision. The result is a geospatial dataset that detects 165,625 buildings for 2008-2009 and 211,458 for 2015. The dataset includes information on the type of changes between the two dates. Information of the geospatial dataset can be of use for various research and planning objectives in socio-economics and societal sciences, as well as urban and infrastructure planning.",
+                "extent": {
+                    "temporalElement": [
+                        {
+                            "extent": "2007-12-31T23:00:00Z"
+                        },
+                        {
+                            "extent": "2015-08-08T22:00:00Z"
+                        }
+                    ]
+                }
+            }
+        ],
+        "contact": [
+            {
+                "individualName": "Felix Bachofer",
+                "organisationName": "German Aerospace Center (DLR)",
+                "positionName": "Researcher",
+                "contactInfo": {
+                    "phone": {
+                        "voice": "",
+                        "facsimile": ""
+                    },
+                    "address": {
+                        "elctronicMailAddress": "felix.bachofer@dlr.de"
+                    },
+                    "onlineResource": {
+                        "linkage": ""
+                    }
+                },
+                "role": "distributor"
+            }
+        ],
+        "referenceSystemInfo": [
+            {
+                "code": "EPSG:32736"
+            }
+        ],
+        "spatialRepresentationInfo": [
+            {
+                "gridSpatialRepresentation": {
+                    "axisDimensionProperties": [
+                        {
+                            "dimensionSize": 2.0
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "tags": [
+        {
+            "tag": "building inventory; building types; change detection; remote sensing; Kigali; Rwanda"
+        }
+    ]
+}

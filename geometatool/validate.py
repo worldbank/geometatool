@@ -49,7 +49,7 @@ def validate_xml_ISO19115_3(instance_file):
                                                                                                       
         try:
             schema.assertValid(doc)
-            print('The instance is valid aginst the ISO 19115-3 and ISO 19110 schemas.')
+            print('The instance is valid aginst the ISO 19115-3 schemas.')
         except etree.DocumentInvalid as err:
             print(err)
     

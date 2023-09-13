@@ -74,8 +74,11 @@ def read_metadata_items(input_file_path):
     elif extension == '.XML':
         with open(input_file_path) as f:
             metadata_item_generator = flatten_dict(xmltodict.parse(f.read()))
+    elif extension == '.QMD':
+        with open(input_file_path) as f:
+            metadata_item_generator = flatten_dict(xmltodict.parse(f.read()))
     else:
-        raise Exception("Input file must be in JSON or XML format.")
+        raise Exception("Input file must be in JSON, XML, or QMD format.")
 
     return list(metadata_item_generator)
 
@@ -128,6 +131,8 @@ def convert_metadata(input_file_path, conversion_table_file_path, target_schema_
             converted_path = converted_paths[path_no]
             full_path = converted_path.split('/')
             metadata_item_value = original_metadata_item['value']
+            if not metadata_item_value:
+                metadata_item_value = ""
             partial_metadata = converted_metadata
             partial_path = []
             upper_array_metadata = None
