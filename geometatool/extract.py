@@ -131,14 +131,13 @@ def extract_metadata(input_file_path, default_values=[]):
         # set gridSpatialRepresentation
         gridSpatialRepresentation = {}
         gridSpatialRepresentation['numberOfDimensions'] = profiles['numberOfDimensions']
-        axisDimensionProperties = {}
-        axisDimensionProperties['rowSize'] = profiles['height']
-        axisDimensionProperties['columnSize'] = profiles['width']
-        axisDimensionProperties['rowResolution'] = abs(profiles['transform'][4])
-        axisDimensionProperties['columnResolution'] = abs(profiles['transform'][0])
-        axisDimensionProperties['resolutionUnit'] = profiles['unit']
 
-        gridSpatialRepresentation['axisDimensionProperties'] = axisDimensionProperties
+        gridSpatialRepresentation['rowSize'] = profiles['height']
+        gridSpatialRepresentation['columnSize'] = profiles['width']
+        gridSpatialRepresentation['rowResolution'] = abs(profiles['transform'][4])
+        gridSpatialRepresentation['columnResolution'] = abs(profiles['transform'][0])
+        gridSpatialRepresentation['resolutionUnit'] = profiles['unit']
+
         gridSpatialRepresentation['cellGeometryCode'] = "area"
         gridSpatialRepresentation['transformationParameterAvailability'] = "true"
 

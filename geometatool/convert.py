@@ -66,7 +66,7 @@ def get_partial_schema(schema, partial_path):
     return partial_schema
 
 
-def read_metadata_items(input_file_path, output_file_path=None):
+def read_metadata_items(input_file_path):
     extension = os.path.splitext(input_file_path)[1].upper()
     if extension == '.JSON':
         with open(input_file_path) as f:
@@ -77,12 +77,13 @@ def read_metadata_items(input_file_path, output_file_path=None):
     else:
         raise Exception("Input file must be in JSON or XML format.")
 
-    if output_file_path:
-        with open(output_file_path, "w", newline="") as f:
-            writer = csv.writer(f)
-            writer.writerows([[item['path'], item['value']] for item in metadata_item_generator])
-
     return list(metadata_item_generator)
+
+
+def save_metadata_items(metadata_items, output_file_path):
+    with open(output_file_path, "w", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerows([[item['path'], item['value']] for item in metadata_items])
 
 
 def convert_metadata(input_file_path, conversion_table_file_path, target_schema_file_path):

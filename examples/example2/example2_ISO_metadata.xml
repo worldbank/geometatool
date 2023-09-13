@@ -3,7 +3,7 @@
   <mdb:metadataIdentifier>
     <mcc:MD_Identifier>
       <mcc:code>
-        <gco:CharacterString>50cf9a15-51a3-11ee-8cd0-64d69adaa83a</gco:CharacterString>
+        <gco:CharacterString>b18b8b43-51d2-11ee-b6f4-64d69adaa83a</gco:CharacterString>
       </mcc:code>
     </mcc:MD_Identifier>
   </mdb:metadataIdentifier>
@@ -60,7 +60,35 @@
       <msr:numberOfDimensions>
         <gco:Integer>2</gco:Integer>
       </msr:numberOfDimensions>
-      <msr:cellGeometry/>
+      <msr:axisDimensionProperties>
+        <msr:MD_Dimension>
+          <msr:dimensionName>
+            <msr:MD_DimensionNameTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_DimensionNameTypeCode" codeListValue="row"/>
+          </msr:dimensionName>
+          <msr:dimensionSize>
+            <gco:Integer>1200</gco:Integer>
+          </msr:dimensionSize>
+          <msr:resolution>
+            <gco:Distance uom="decimalDegrees">0.008333333333333333</gco:Distance>
+          </msr:resolution>
+        </msr:MD_Dimension>
+      </msr:axisDimensionProperties>
+      <msr:axisDimensionProperties>
+        <msr:MD_Dimension>
+          <msr:dimensionName>
+            <msr:MD_DimensionNameTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_DimensionNameTypeCode" codeListValue="column"/>
+          </msr:dimensionName>
+          <msr:dimensionSize>
+            <gco:Integer>1680</gco:Integer>
+          </msr:dimensionSize>
+          <msr:resolution>
+            <gco:Distance uom="decimalDegrees">0.008333333333333333</gco:Distance>
+          </msr:resolution>
+        </msr:MD_Dimension>
+      </msr:axisDimensionProperties>
+      <msr:cellGeometry>
+        <msr:MD_CellGeometryCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CellGeometryCode" codeListValue="area"/>
+      </msr:cellGeometry>
       <msr:transformationParameterAvailability>
         <gco:Boolean>true</gco:Boolean>
       </msr:transformationParameterAvailability>
@@ -162,17 +190,17 @@
             <mrc:MD_CoverageContentTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CoverageContentTypeCode" codeListValue="image"/>
           </mrc:contentType>
           <mrc:attribute>
-            <mrc:MD_Band>
-              <mrc:descriptor>
+            <mrc:MD_SampleDimension>
+              <mrc:description>
                 <gco:CharacterString>Band_1</gco:CharacterString>
-              </mrc:descriptor>
-              <mrc:boundMax>
-                <gco:Real>nan</gco:Real>
-              </mrc:boundMax>
-              <mrc:boundMin>
-                <gco:Real>nan</gco:Real>
-              </mrc:boundMin>
-            </mrc:MD_Band>
+              </mrc:description>
+              <mrc:maxValue>
+                <gco:Real>5.689</gco:Real>
+              </mrc:maxValue>
+              <mrc:minValue>
+                <gco:Real>3.53</gco:Real>
+              </mrc:minValue>
+            </mrc:MD_SampleDimension>
           </mrc:attribute>
         </mrc:MD_AttributeGroup>
       </mrc:attributeGroup>

@@ -84,6 +84,8 @@ codelist_MD_TopologyLevelCode = 'http://standards.iso.org/iso/19115/resources/Co
 codelist_MD_GeometricObjectTypeCode = 'http://standards.iso.org/iso/19115/resources/Codelist/cat/codelists.xml#MD_GeometricObjectTypeCode'
 codelist_DS_AssociationTypeCode = 'http://standards.iso.org/iso/19115/resources/Codelist/cat/codelists.xml#DS_AssociationTypeCode'
 codelist_MD_CoverageContentTypeCode = 'http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CoverageContentTypeCode'
+codelist_MD_CellGeometryCode = 'http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CellGeometryCode'
+codelist_MD_DimensionNameTypeCode = 'http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_DimensionNameTypeCode'
 
 class ISO_Metadata:
     '''Class to create ISO19115-3 Metadata Entries.'''
@@ -348,10 +350,35 @@ class ISO_Metadata:
             c = ET.SubElement(b, '{'+ msr +'}numberOfDimensions')
             d = ET.SubElement(c, '{'+ gco +'}Integer')
             d.text = str(gridSpatialRepresentation['numberOfDimensions'])
+
+            e = ET.SubElement(b, '{'+ msr +'}axisDimensionProperties')
+            f = ET.SubElement(e, '{'+ msr +'}MD_Dimension')
+            g = ET.SubElement(f, '{'+ msr +'}dimensionName')
+            ET.SubElement(g, '{'+ msr +'}MD_DimensionNameTypeCode', codeList=codelist_MD_DimensionNameTypeCode, codeListValue="row")
+            g = ET.SubElement(f, '{'+ msr +'}dimensionSize')
+            h = ET.SubElement(g, '{'+ gco +'}Integer')
+            h.text = str(gridSpatialRepresentation['rowSize'])
+            i = ET.SubElement(f, '{'+ msr +'}resolution')
+            j = ET.SubElement(i, '{'+ gco +'}Distance', uom=gridSpatialRepresentation['resolutionUnit'])
+            j.text = str(gridSpatialRepresentation['rowResolution'])
+
+            e = ET.SubElement(b, '{'+ msr +'}axisDimensionProperties')
+            f = ET.SubElement(e, '{'+ msr +'}MD_Dimension')
+            g = ET.SubElement(f, '{'+ msr +'}dimensionName')
+            ET.SubElement(g, '{'+ msr +'}MD_DimensionNameTypeCode', codeList=codelist_MD_DimensionNameTypeCode, codeListValue="column")
+            g = ET.SubElement(f, '{'+ msr +'}dimensionSize')
+            h = ET.SubElement(g, '{'+ gco +'}Integer')
+            h.text = str(gridSpatialRepresentation['columnSize'])
+            i = ET.SubElement(f, '{'+ msr +'}resolution')
+            j = ET.SubElement(i, '{'+ gco +'}Distance', uom=gridSpatialRepresentation['resolutionUnit'])
+            j.text = str(gridSpatialRepresentation['columnResolution'])
+
             e = ET.SubElement(b, '{'+ msr +'}cellGeometry')
+            ET.SubElement(e, '{'+ msr +'}MD_CellGeometryCode', codeList=codelist_MD_CellGeometryCode, codeListValue=gridSpatialRepresentation['cellGeometryCode'])
+
             f = ET.SubElement(b, '{'+ msr +'}transformationParameterAvailability')
             g = ET.SubElement(f, '{'+ gco +'}Boolean')
-            g.text = 'true'
+            g.text = gridSpatialRepresentation['transformationParameterAvailability']
 
     
     def featureCatalogue(self, featureCatalogueName, featureCatalogueScopes, versionNumber, versionDate, languageCode, organisationName, individualName, roleCode, featureTypeList):
@@ -446,14 +473,14 @@ class ISO_Metadata:
 
         h = ET.SubElement(f, '{'+ mrc +'}attribute')
         for band_idx in range(numberOfBands):
-            i = ET.SubElement(h, '{'+ mrc +'}MD_Band')
-            j = ET.SubElement(i, '{'+ mrc +'}descriptor')
+            i = ET.SubElement(h, '{'+ mrc +'}MD_SampleDimension')
+            j = ET.SubElement(i, '{'+ mrc +'}description')
             k = ET.SubElement(j, '{'+ gco +'}CharacterString')
             k.text = 'Band_' + str(band_idx+1)
-            l = ET.SubElement(i, '{'+ mrc +'}boundMax')
+            l = ET.SubElement(i, '{'+ mrc +'}maxValue')
             m = ET.SubElement(l, '{'+ gco +'}Real')
             m.text = str(maxValues[band_idx])
-            n = ET.SubElement(i, '{'+ mrc +'}boundMin')
+            n = ET.SubElement(i, '{'+ mrc +'}minValue')
             o = ET.SubElement(n, '{'+ gco +'}Real')
             o.text = str(minValues[band_idx])
 
