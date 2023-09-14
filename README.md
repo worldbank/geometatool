@@ -32,14 +32,14 @@ with open(output_file_path, "w") as f:
 ```
 
 ### Metadata validation
-GeoMetaTool allows you to validate the correctness of metadata syntax, ensuring that your geospatial metadata adheres to ISO 19115-3/19110 or predefined json schema.
+GeoMetaTool allows you to validate the correctness of metadata syntax, ensuring that your geospatial metadata adheres to ISO 19115-3 or predefined json schema.
 
 ```sh
 import geometatool
 
 geometatool.validate_xml_ISO19115_3(instance_file_path)
 # The XML is well formed.
-# The instance is valid aginst the ISO 19115-3 and ISO 19110 schemas.
+# The instance is valid aginst the ISO 19115-3 schemas.
 
 geometatool.validate_json(instance_file_path, schema_file_path)
 # The instance is valid aginst the provided schema.
