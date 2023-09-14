@@ -17,7 +17,7 @@ iso_metadata.save_to_file(output_file_path)
 ```
 
 ### Metadata conversion
-Dealing with different metadata standards across geospatial projects can be cumbersome. GeoMetaTool offers a solution by enabling the conversion of metadata between different schemas. This is achieved through a conversion table between ISO 19115-3/19110 and another predefined schema. This feature promotes interoperability and consistency across diverse geospatial data sources. 
+Dealing with different metadata standards across geospatial projects can be cumbersome. GeoMetaTool offers a solution by enabling the conversion of metadata between different schemas. This is achieved through a conversion table between ISO 19115-3 and other predefined schemas. This feature promotes interoperability and consistency across diverse geospatial data sources.
 
 The package is currently under development to support the following geospatial metadata
 
