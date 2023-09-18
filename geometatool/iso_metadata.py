@@ -458,6 +458,7 @@ class ISO_Metadata:
                     x = ET.SubElement(w, '{'+ gco +'}CharacterString')
                     x.text = str(listedValue)
 
+            y = ET.SubElement(g, '{'+ gfc +'}featureCatalogue')
 
     def coverageDescription(self, contentTypeCode, numberOfBands, maxValues, minValues, noDataValue):
         a = ET.SubElement(self.root, '{'+ mdb +'}contentInfo')

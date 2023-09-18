@@ -1,8 +1,8 @@
 import os
 import rasterio
 import logging
-import utils
 import numpy as np
+from .. import utils
 
 #Set up logging
 log = logging.getLogger(__name__)

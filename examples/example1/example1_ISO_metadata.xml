@@ -3,7 +3,7 @@
   <mdb:metadataIdentifier>
     <mcc:MD_Identifier>
       <mcc:code>
-        <gco:CharacterString>69708584-4ded-11ee-9c93-64d69adaa83a</gco:CharacterString>
+        <gco:CharacterString>3ae67603-564f-11ee-9afd-64d69adaa83a</gco:CharacterString>
       </mcc:code>
     </mcc:MD_Identifier>
   </mdb:metadataIdentifier>
@@ -63,7 +63,7 @@
       <msr:geometricObjects>
         <msr:MD_GeometricObjects>
           <msr:geometricObjectType>
-            <msr:MD_GeometricObjectTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cat/codelists.xml#MD_GeometricObjectTypeCode" codeListValue="MD_GeometricObjectTypeCode_surface"/>
+            <msr:MD_GeometricObjectTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cat/codelists.xml#MD_GeometricObjectTypeCode" codeListValue="surface"/>
           </msr:geometricObjectType>
           <msr:geometricObjectCount>
             <gco:Integer>1373</gco:Integer>
@@ -73,7 +73,7 @@
       <msr:geometricObjects>
         <msr:MD_GeometricObjects>
           <msr:geometricObjectType>
-            <msr:MD_GeometricObjectTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cat/codelists.xml#MD_GeometricObjectTypeCode" codeListValue="MD_GeometricObjectTypeCode_complex"/>
+            <msr:MD_GeometricObjectTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cat/codelists.xml#MD_GeometricObjectTypeCode" codeListValue="complex"/>
           </msr:geometricObjectType>
           <msr:geometricObjectCount>
             <gco:Integer>790</gco:Integer>

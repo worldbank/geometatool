@@ -67,3 +67,4 @@ target/
 *.dbf
 *.tif
 *.tiff
+/maintenance_commands.txt

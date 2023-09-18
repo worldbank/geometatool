@@ -51,11 +51,11 @@
                 "vectorSpatialRepresentation": {
                     "geometricObjects": [
                         {
-                            "geometricObjectType": "MD_GeometricObjectTypeCode_surface",
+                            "geometricObjectType": "surface",
                             "geometricObjectCount": 1373
                         },
                         {
-                            "geometricObjectType": "MD_GeometricObjectTypeCode_complex",
+                            "geometricObjectType": "complex",
                             "geometricObjectCount": 790
                         }
                     ]

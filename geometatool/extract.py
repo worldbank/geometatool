@@ -5,11 +5,11 @@ import os
 import uuid
 import time
 
-from iso_metadata import *
-from geo_profiles import vector_data
-from geo_profiles import raster_data
-from geo_profiles import geo_database
-import utils
+from .iso_metadata import ISO_Metadata
+from .geo_profiles import vector_data
+from .geo_profiles import raster_data
+from .geo_profiles import geo_database
+from . import utils
 
 
 # set up logging

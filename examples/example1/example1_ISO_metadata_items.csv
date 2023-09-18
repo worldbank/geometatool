@@ -13,7 +13,7 @@ mdb:MD_Metadata/@xmlns:mrd,http://standards.iso.org/iso/19115/-3/mrd/1.0
 mdb:MD_Metadata/@xmlns:mri,http://standards.iso.org/iso/19115/-3/mri/1.0
 mdb:MD_Metadata/@xmlns:mrs,http://standards.iso.org/iso/19115/-3/mrs/1.0
 mdb:MD_Metadata/@xmlns:msr,http://standards.iso.org/iso/19115/-3/msr/2.0
-mdb:MD_Metadata/mdb:metadataIdentifier/mcc:MD_Identifier/mcc:code/gco:CharacterString,69708584-4ded-11ee-9c93-64d69adaa83a
+mdb:MD_Metadata/mdb:metadataIdentifier/mcc:MD_Identifier/mcc:code/gco:CharacterString,3ae67603-564f-11ee-9afd-64d69adaa83a
 mdb:MD_Metadata/mdb:defaultLocale/lan:PT_Locale/lan:language/lan:LanguageCode/@codeList,http://standards.iso.org/19115/-3/lan/1.0/codelists.xml#LanguageCode
 mdb:MD_Metadata/mdb:defaultLocale/lan:PT_Locale/lan:language/lan:LanguageCode/@codeListValue,eng
 mdb:MD_Metadata/mdb:defaultLocale/lan:PT_Locale/lan:characterEncoding/lan:MD_CharacterSetCode/@codeList,http://standards.iso.org/19115/-3/lan/1.0/codelists.xml#MD_CharacterSetCode
@@ -30,10 +30,10 @@ mdb:MD_Metadata/mdb:dateInfo/cit:CI_Date/cit:dateType/cit:CI_DateTypeCode/@codeL
 mdb:MD_Metadata/mdb:spatialRepresentationInfo/msr:MD_VectorSpatialRepresentation/msr:topologyLevel/msr:MD_TopologyLevelCode/@codeList,http://standards.iso.org/iso/19115/resources/Codelist/cat/codelists.xml#MD_TopologyLevelCode
 mdb:MD_Metadata/mdb:spatialRepresentationInfo/msr:MD_VectorSpatialRepresentation/msr:topologyLevel/msr:MD_TopologyLevelCode/@codeListValue,geometryOnly
 mdb:MD_Metadata/mdb:spatialRepresentationInfo/msr:MD_VectorSpatialRepresentation/msr:geometricObjects/msr:MD_GeometricObjects/msr:geometricObjectType/msr:MD_GeometricObjectTypeCode/@codeList,http://standards.iso.org/iso/19115/resources/Codelist/cat/codelists.xml#MD_GeometricObjectTypeCode
-mdb:MD_Metadata/mdb:spatialRepresentationInfo/msr:MD_VectorSpatialRepresentation/msr:geometricObjects/msr:MD_GeometricObjects/msr:geometricObjectType/msr:MD_GeometricObjectTypeCode/@codeListValue,MD_GeometricObjectTypeCode_surface
+mdb:MD_Metadata/mdb:spatialRepresentationInfo/msr:MD_VectorSpatialRepresentation/msr:geometricObjects/msr:MD_GeometricObjects/msr:geometricObjectType/msr:MD_GeometricObjectTypeCode/@codeListValue,surface
 mdb:MD_Metadata/mdb:spatialRepresentationInfo/msr:MD_VectorSpatialRepresentation/msr:geometricObjects/msr:MD_GeometricObjects/msr:geometricObjectCount/gco:Integer,1373
 mdb:MD_Metadata/mdb:spatialRepresentationInfo/msr:MD_VectorSpatialRepresentation/msr:geometricObjects/msr:MD_GeometricObjects/msr:geometricObjectType/msr:MD_GeometricObjectTypeCode/@codeList,http://standards.iso.org/iso/19115/resources/Codelist/cat/codelists.xml#MD_GeometricObjectTypeCode
-mdb:MD_Metadata/mdb:spatialRepresentationInfo/msr:MD_VectorSpatialRepresentation/msr:geometricObjects/msr:MD_GeometricObjects/msr:geometricObjectType/msr:MD_GeometricObjectTypeCode/@codeListValue,MD_GeometricObjectTypeCode_complex
+mdb:MD_Metadata/mdb:spatialRepresentationInfo/msr:MD_VectorSpatialRepresentation/msr:geometricObjects/msr:MD_GeometricObjects/msr:geometricObjectType/msr:MD_GeometricObjectTypeCode/@codeListValue,complex
 mdb:MD_Metadata/mdb:spatialRepresentationInfo/msr:MD_VectorSpatialRepresentation/msr:geometricObjects/msr:MD_GeometricObjects/msr:geometricObjectCount/gco:Integer,790
 mdb:MD_Metadata/mdb:referenceSystemInfo/mrs:MD_ReferenceSystem/mrs:referenceSystemIdentifier/mcc:MD_Identifier/mcc:code/gco:CharacterString,4326
 mdb:MD_Metadata/mdb:referenceSystemInfo/mrs:MD_ReferenceSystem/mrs:referenceSystemIdentifier/mcc:MD_Identifier/mcc:codeSpace/gco:CharacterString,EPSG

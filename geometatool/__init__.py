@@ -1,5 +1,5 @@
-from convert import *
-from extract import *
-from validate import *
+from .convert import *
+from .extract import *
+from .validate import *
 
 

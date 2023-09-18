@@ -1,7 +1,7 @@
 import os
 import geopandas as gpd
 import logging
-import utils
+from .. import utils
 
 #Set up logging
 log = logging.getLogger(__name__)
