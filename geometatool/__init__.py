@@ -1,5 +1,3 @@
-from .convert import *
-from .extract import *
-from .validate import *
-
-
+from geometatool.extract import *
+from geometatool.convert import *
+from geometatool.validate import *

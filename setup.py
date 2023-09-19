@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 BASE_DIR = pathlib.Path(__file__).parent
 
 PACKAGE_NAME = 'geometatool'
-VERSION = '0.0.19'
+VERSION = '0.1.0'
 AUTHOR = 'Kamwoo Lee'
 URL = 'https://github.com/worldbank/geometatool'
 

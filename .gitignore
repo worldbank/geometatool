@@ -68,3 +68,4 @@ target/
 *.tif
 *.tiff
 /maintenance_commands.txt
+/requests - Shortcut.lnk

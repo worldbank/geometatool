@@ -5,11 +5,11 @@ import os
 import uuid
 import time
 
-from .iso_metadata import ISO_Metadata
-from .geo_profiles import vector_data
-from .geo_profiles import raster_data
-from .geo_profiles import geo_database
-from . import utils
+from geometatool.geo_profiles import vector_data
+from geometatool.geo_profiles import raster_data
+from geometatool.geo_profiles import geo_database
+import geometatool.formatter as formatter
+import geometatool.utils as utils
 
 
 # set up logging
@@ -58,7 +58,7 @@ def extract_metadata(input_file_path, default_values=[]):
         classificationCode = ""
         useLimitations = ""
  
-    iso_metadata = ISO_Metadata()
+    iso_metadata = formatter.ISO_Metadata()
 
     ###############
     # Vector data #
